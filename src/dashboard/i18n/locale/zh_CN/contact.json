@@ -1,0 +1,237 @@
+{
+  "CONTACT_PANEL": {
+    "NOT_AVAILABLE": "不可用",
+    "EMAIL_ADDRESS": "电子邮件地址",
+    "PHONE_NUMBER": "电话号码",
+    "COPY_SUCCESSFUL": "已成功复制到剪贴板",
+    "COMPANY": "公司",
+    "LOCATION": "位置",
+    "CONVERSATION_TITLE": "对话详情",
+    "BROWSER": "浏览器",
+    "OS": "操作系统",
+    "INITIATED_FROM": "启动自：",
+    "INITIATED_AT": "发起于",
+    "IP_ADDRESS": "IP 地址",
+    "NEW_MESSAGE": "新消息",
+    "CONVERSATIONS": {
+      "NO_RECORDS_FOUND": "此联系人没有关联到以前的会话。",
+      "TITLE": "上一次对话"
+    },
+    "LABELS": {
+      "CONTACT": {
+        "TITLE": "联系人标签",
+        "ERROR": "无法更新标签"
+      },
+      "CONVERSATION": {
+        "TITLE": "对话标记",
+        "ADD_BUTTON": "添加标签"
+      },
+      "LABEL_SELECT": {
+        "TITLE": "添加标签",
+        "PLACEHOLDER": "搜索标签",
+        "NO_RESULT": "未找到标签"
+      }
+    },
+    "MUTE_CONTACT": "开始会话",
+    "UNMUTE_CONTACT": "取消静音",
+    "MUTED_SUCCESS": "此对话被静音6小时",
+    "UNMUTED_SUCCESS": "此对话已取消静音",
+    "SEND_TRANSCRIPT": "Send Transcript",
+    "EDIT_LABEL": "编辑"
+  },
+  "EDIT_CONTACT": {
+    "BUTTON_LABEL": "编辑联系人",
+    "TITLE": "编辑联系人",
+    "DESC": "编辑联系人详情"
+  },
+  "CREATE_CONTACT": {
+    "BUTTON_LABEL": "新建联系人",
+    "TITLE": "创建新联系人",
+    "DESC": "添加联系人的基本信息。"
+  },
+  "CONTACT_FORM": {
+    "FORM": {
+      "SUBMIT": "提交",
+      "CANCEL": "取消",
+      "AVATAR": {
+        "LABEL": "联系人头像"
+      },
+      "NAME": {
+        "PLACEHOLDER": "输入联系人的名字",
+        "LABEL": "名字"
+      },
+      "BIO": {
+        "PLACEHOLDER": "Enter the bio of the contact",
+        "LABEL": "Bio"
+      },
+      "EMAIL_ADDRESS": {
+        "PLACEHOLDER": "输入联系人的电子邮件地址",
+        "LABEL": "电子邮件地址"
+      },
+      "PHONE_NUMBER": {
+        "PLACEHOLDER": "输入联系人的电话号码",
+        "LABEL": "电话号码",
+        "HELP": "电话号码应为E.164格式，例如：+14155555 [+] [国家代码][地区代码][本地电话号码]",
+        "ERROR": "电话号码应为空或E.164格式"
+      },
+      "LOCATION": {
+        "PLACEHOLDER": "Enter the location of the contact",
+        "LABEL": "位置"
+      },
+      "COMPANY_NAME": {
+        "PLACEHOLDER": "Enter the company name",
+        "LABEL": "Company Name"
+      },
+      "SOCIAL_PROFILES": {
+        "FACEBOOK": {
+          "PLACEHOLDER": "Enter the Facebook username",
+          "LABEL": "Facebook"
+        },
+        "TWITTER": {
+          "PLACEHOLDER": "输入 Twitter 用户名",
+          "LABEL": "推特"
+        },
+        "LINKEDIN": {
+          "PLACEHOLDER": "Enter the LinkedIn username",
+          "LABEL": "LinkedIn"
+        },
+        "GITHUB": {
+          "PLACEHOLDER": "输入Github用户名",
+          "LABEL": "Github"
+        }
+      }
+    },
+    "SUCCESS_MESSAGE": "Contact saved successfully",
+    "CONTACT_ALREADY_EXIST": "This email address is in use for another contact.",
+    "ERROR_MESSAGE": "出现错误，请重试"
+  },
+  "NEW_CONVERSATION": {
+    "BUTTON_LABEL": "Start conversation",
+    "TITLE": "New conversation",
+    "DESC": "Start a new conversation by sending a new message.",
+    "NO_INBOX": "Couldn't find an inbox to initiate a new conversation with this contact.",
+    "FORM": {
+      "TO": {
+        "LABEL": "To"
+      },
+      "INBOX": {
+        "LABEL": "Inbox",
+        "ERROR": "Select an inbox"
+      },
+      "MESSAGE": {
+        "LABEL": "消息",
+        "PLACEHOLDER": "Write your message here",
+        "ERROR": "Message can't be empty"
+      },
+      "SUBMIT": "Send message",
+      "CANCEL": "取消",
+      "SUCCESS_MESSAGE": "Message sent!",
+      "ERROR_MESSAGE": "Couldn't send! try again"
+    }
+  },
+  "CONTACTS_PAGE": {
+    "HEADER": "Contacts",
+    "FIELDS": "Contact fields",
+    "SEARCH_BUTTON": "搜索",
+    "SEARCH_INPUT_PLACEHOLDER": "搜索联系人",
+    "LIST": {
+      "LOADING_MESSAGE": "正在加载联系人列表...",
+      "404": "没有搜索到联系人🔍",
+      "NO_CONTACTS": "There are no available contacts",
+      "TABLE_HEADER": {
+        "NAME": "姓名：",
+        "PHONE_NUMBER": "电话号码",
+        "CONVERSATIONS": "会话",
+        "LAST_ACTIVITY": "Last Activity",
+        "COUNTRY": "Country",
+        "CITY": "City",
+        "SOCIAL_PROFILES": "Social Profiles",
+        "COMPANY": "公司",
+        "EMAIL_ADDRESS": "电子邮件地址"
+      },
+      "VIEW_DETAILS": "View details"
+    }
+  },
+  "REMINDER": {
+    "ADD_BUTTON": {
+      "BUTTON": "Add",
+      "TITLE": "Shift + Enter to create a task"
+    },
+    "FOOTER": {
+      "DUE_DATE": "Due date",
+      "LABEL_TITLE": "Set type"
+    }
+  },
+  "NOTES": {
+    "HEADER": {
+      "TITLE": "Notes"
+    },
+    "ADD": {
+      "BUTTON": "Add",
+      "PLACEHOLDER": "Add a note",
+      "TITLE": "Shift + Enter to create a note"
+    },
+    "FOOTER": {
+      "BUTTON": "View all notes"
+    }
+  },
+  "EVENTS": {
+    "HEADER": {
+      "TITLE": "Activities"
+    },
+    "BUTTON": {
+      "PILL_BUTTON_NOTES": "notes",
+      "PILL_BUTTON_EVENTS": "events",
+      "PILL_BUTTON_CONVO": "会话"
+    }
+  },
+  "CUSTOM_ATTRIBUTES": {
+    "TITLE": "自定义属性",
+    "BUTTON": "Add custom attribute",
+    "ADD": {
+      "TITLE": "Create custom attribute",
+      "DESC": "Add custom information to this contact."
+    },
+    "FORM": {
+      "CREATE": "Add attribute",
+      "CANCEL": "取消",
+      "NAME": {
+        "LABEL": "Custom attribute name",
+        "PLACEHOLDER": "Eg: shopify id",
+        "ERROR": "Invalid custom attribute name"
+      },
+      "VALUE": {
+        "LABEL": "Attribute value",
+        "PLACEHOLDER": "Eg: 11901 "
+      }
+    }
+  },
+  "MERGE_CONTACTS": {
+    "TITLE": "Merge contacts",
+    "DESCRIPTION": "Merge contact is helpful when you have duplicated entries of the same contact. Merging action takes a primary contact and a child contact. After merging, all details in the primary contact will remain the same. If the primary contact doesn't have a field, then the value from the child contact will be used after merging. If a conflict happens, fields in primary contact will remain unaffected, but fields from secondary will be copied to the custom attributes in the primary contact.",
+    "PRIMARY": {
+      "TITLE": "Primary contact"
+    },
+    "CHILD": {
+      "TITLE": "Contact to merge",
+      "PLACEHOLDER": "Choose a contact"
+    },
+    "SUMMARY": {
+      "TITLE": "Summary",
+      "DELETE_WARNING": "Contact of <strong>%{childContactName}</strong>will be deleted.",
+      "ATTRIBUTE_WARNING": "Contact details of <strong>%{childContactName}</strong> will be copied to <strong>%{primaryContactName}</strong>."
+    },
+    "SEARCH": {
+      "ERROR": "ERROR_MESSAGE"
+    },
+    "FORM": {
+      "SUBMIT": " Merge contacts",
+      "CANCEL": "取消",
+      "CHILD_CONTACT": {
+        "ERROR": "Select a child contact to merge"
+      },
+      "SUCCESS_MESSAGE": "Contact merged successfully",
+      "ERROR_MESSAGE": "Could not merge contcts, try again!"
+    }
+  }
+}

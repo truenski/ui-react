@@ -1,0 +1,71 @@
+{
+  "COMPONENTS": {
+    "FILE_BUBBLE": {
+      "DOWNLOAD": "Descargar",
+      "UPLOADING": "Subiendo..."
+    },
+    "FORM_BUBBLE": {
+      "SUBMIT": "Enviar"
+    }
+  },
+  "TEAM_AVAILABILITY": {
+    "ONLINE": "Estamos en línea",
+    "OFFLINE": "Estamos ausentes en este momento"
+  },
+  "REPLY_TIME": {
+    "IN_A_FEW_MINUTES": "Normalmente responde en unos minutos",
+    "IN_A_FEW_HOURS": "Normalmente responde en unas pocas horas",
+    "IN_A_DAY": "Normalmente responde en un día"
+  },
+  "START_CONVERSATION": "Iniciar conversación",
+  "START_NEW_CONVERSATION": "Start a new conversation",
+  "UNREAD_VIEW": {
+    "VIEW_MESSAGES_BUTTON": "Ver nuevos mensajes",
+    "CLOSE_MESSAGES_BUTTON": "Cerrar",
+    "COMPANY_FROM": "De",
+    "BOT": "Bot"
+  },
+  "BUBBLE": {
+    "LABEL": "Chatea con nosotros"
+  },
+  "POWERED_BY": "Desarrollado por Chatwoot",
+  "EMAIL_PLACEHOLDER": "Por favor ingrese su email",
+  "CHAT_PLACEHOLDER": "Escribe tu mensaje",
+  "TODAY": "Hoy",
+  "YESTERDAY": "Ayer",
+  "PRE_CHAT_FORM": {
+    "FIELDS": {
+      "FULL_NAME": {
+        "LABEL": "Nombre completo",
+        "PLACEHOLDER": "Introduzca su nombre completo por favor",
+        "ERROR": "Nombre completo es obligatorio"
+      },
+      "EMAIL_ADDRESS": {
+        "LABEL": "Dirección de correo",
+        "PLACEHOLDER": "Introduzca su dirección de correo electrónico",
+        "ERROR": "Dirección de correo no válida"
+      },
+      "MESSAGE": {
+        "LABEL": "Mensaje",
+        "PLACEHOLDER": "Introduzca su mensaje",
+        "ERROR": "Mensaje demasiado corto"
+      }
+    }
+  },
+  "FILE_SIZE_LIMIT": "El archivo excede el límite de los archivos adjuntos {MAXIMUM_FILE_UPLOAD_SIZE}",
+  "CHAT_FORM": {
+    "INVALID": {
+      "FIELD": "Campo no válido"
+    }
+  },
+  "CSAT": {
+    "TITLE": "Rate your conversation",
+    "SUBMITTED_TITLE": "Thank you for submitting the rating",
+    "PLACEHOLDER": "Tell us more..."
+  },
+  "EMAIL_TRANSCRIPT": {
+    "BUTTON_TEXT": "Request a conversation transcript",
+    "SEND_EMAIL_SUCCESS": "La transcripción ha sido enviada",
+    "SEND_EMAIL_ERROR": "Hubo un error, por favor inténtelo de nuevo"
+  }
+}

@@ -1,0 +1,39 @@
+/* Adicione aqui os estilos globais */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f8f9fa;
+}
+
+.app-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.sub-menu-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+}
+
+.label-color--display {
+  border-radius: 4px;
+  height: 16px;
+  margin-right: 8px;
+  min-width: 16px;
+  width: 16px;
+}
+
+.inbox-icon {
+  position: relative;
+  top: -1px;
+}

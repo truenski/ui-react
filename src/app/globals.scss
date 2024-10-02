@@ -1,0 +1,140 @@
+$background-light: #ffffff;
+$foreground-light: #171717;
+$background-dark: #0a0a0a;
+$foreground-dark: #ededed;
+
+$white: #ffffff;
+$woot-50: #E3F2FF;
+$woot-100: #BBDDFF;
+$woot-200: #8FC9FF;
+$woot-300: #61B3FF;
+$woot-400: #3FA3FF;
+$woot-500: #1F93FF;
+$woot-600: #2284F0;
+$woot-700: #2272DC;
+$woot-800: #2161CA;
+$woot-900: #1F41AB;
+
+$green-50: #E6F8E6;
+$green-100: #C4EEC2;
+$green-200: #9DE29A;
+$green-300: #6FD86F;
+$green-400: #44CE4B;
+$green-500: #00C41D;
+$green-600: #00B412;
+$green-700: #00A200;
+$green-800: #009000;
+$green-900: #007000;
+
+$yellow-50: #FFFEE8;
+$yellow-100: #FFFAC5;
+$yellow-200: #FFF69E;
+$yellow-300: #FEF176;
+$yellow-400: #FCEC56;
+$yellow-500: #F9E736;
+$yellow-600: #FFDD3A;
+$yellow-700: #FFC532;
+$yellow-800: #FDAD2A;
+$yellow-900: #F9841B;
+
+$slate-50: #F4F6FB;
+$slate-100: #C8D6E6;
+$slate-200: #ABBACE;
+$slate-300: #8C9EB6;
+$slate-400: #7489A4;
+$slate-500: #5D7592;
+$slate-600: #506781;
+$slate-700: #40546B;
+$slate-800: #314155;
+$slate-900: #1F2D3D;
+
+$black-50: #F8F9FE;
+$black-100: #F2F3F7;
+$black-200: #E9EAEF;
+$black-300: #DADBDF;
+$black-400: #B6B7BB;
+$black-500: #96979C;
+$black-600: #6E6F73;
+$black-700: #3C4858;
+$black-800: #3C3D40;
+$black-900: #1B1C1F;
+
+$red-50: #FFEBEE;
+$red-100: #FFCCD1;
+$red-200: #F69898;
+$red-300: #EF6F6F;
+$red-400: #F94B4A;
+$red-500: #FF382D;
+$red-600: #F02B2D;
+$red-700: #DE1E27;
+$red-800: #D11320;
+$red-900: #C30011;
+
+:root {
+  --background: #{$background-light};
+  --foreground: #{$foreground-light};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #{$background-dark};
+    --foreground: #{$foreground-dark};
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+/* Example classes */
+.container {
+  padding: 1rem;
+  background-color: $woot-50;
+}
+
+.text-green {
+  color: $green-500;
+}
+
+.bg-yellow {
+  background-color: $yellow-500;
+}
+
+@mixin breakpoint($point) {
+  @if $point == large up {
+    @media (min-width: 1024px) { @content; }
+  } @else if $point == xlarge up {
+    @media (min-width: 1200px) { @content; }
+  } @else if $point == xxlarge up {
+    @media (min-width: 1440px) { @content; }
+  } @else if $point == xxxlarge up {
+    @media (min-width: 1600px) { @content; }
+  }
+}

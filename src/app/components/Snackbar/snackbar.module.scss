@@ -1,0 +1,20 @@
+.ui-snackbar-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+  }
+  
+  .ui-snackbar {
+    background-color: #323232;
+    color: #fff;
+    padding: 16px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ui-snackbar-text {
+    font-size: 14px;
+  }

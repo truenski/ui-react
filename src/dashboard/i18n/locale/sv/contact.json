@@ -1,0 +1,237 @@
+{
+  "CONTACT_PANEL": {
+    "NOT_AVAILABLE": "Ej tillgänglig",
+    "EMAIL_ADDRESS": "E-postadress",
+    "PHONE_NUMBER": "Telefonnummer",
+    "COPY_SUCCESSFUL": "Kopierat till urklipp",
+    "COMPANY": "Företag",
+    "LOCATION": "Plats",
+    "CONVERSATION_TITLE": "Konversationsdetaljer",
+    "BROWSER": "Webbläsare",
+    "OS": "Operativsystem",
+    "INITIATED_FROM": "Initierad från",
+    "INITIATED_AT": "Initierad den",
+    "IP_ADDRESS": "IP-adress",
+    "NEW_MESSAGE": "New message",
+    "CONVERSATIONS": {
+      "NO_RECORDS_FOUND": "Det finns inga tidigare konversationer kopplade till denna kontakt.",
+      "TITLE": "Tidigare konversationer"
+    },
+    "LABELS": {
+      "CONTACT": {
+        "TITLE": "Contact Labels",
+        "ERROR": "Couldn't update labels"
+      },
+      "CONVERSATION": {
+        "TITLE": "Conversation Labels",
+        "ADD_BUTTON": "Add Labels"
+      },
+      "LABEL_SELECT": {
+        "TITLE": "Add Labels",
+        "PLACEHOLDER": "Search labels",
+        "NO_RESULT": "No labels found"
+      }
+    },
+    "MUTE_CONTACT": "Tysta konversation",
+    "UNMUTE_CONTACT": "Avtysta konversation",
+    "MUTED_SUCCESS": "Denna konversation är tystad i 6 timmar",
+    "UNMUTED_SUCCESS": "Denna konversation är avtystad",
+    "SEND_TRANSCRIPT": "Skicka transkribering",
+    "EDIT_LABEL": "Redigera"
+  },
+  "EDIT_CONTACT": {
+    "BUTTON_LABEL": "Redigera kontakt",
+    "TITLE": "Redigera kontakt",
+    "DESC": "Redigera kontaktuppgifter"
+  },
+  "CREATE_CONTACT": {
+    "BUTTON_LABEL": "New Contact",
+    "TITLE": "Create new contact",
+    "DESC": "Add basic information details about the contact."
+  },
+  "CONTACT_FORM": {
+    "FORM": {
+      "SUBMIT": "Skicka",
+      "CANCEL": "Avbryt",
+      "AVATAR": {
+        "LABEL": "Kontaktavatar"
+      },
+      "NAME": {
+        "PLACEHOLDER": "Ange det fullständiga namnet för kontakten",
+        "LABEL": "Fullständigt namn"
+      },
+      "BIO": {
+        "PLACEHOLDER": "Ange biografi för kontakten",
+        "LABEL": "Biografi"
+      },
+      "EMAIL_ADDRESS": {
+        "PLACEHOLDER": "Ange e-postadressen till kontakten",
+        "LABEL": "E-postadress"
+      },
+      "PHONE_NUMBER": {
+        "PLACEHOLDER": "Ange telefonnummer till kontakten",
+        "LABEL": "Telefonnummer",
+        "HELP": "Phone number should be of E.164 format eg: +1415555555 [+][country code][area code][local phone number]",
+        "ERROR": "Phone number should be either empty or of E.164 format"
+      },
+      "LOCATION": {
+        "PLACEHOLDER": "Ange platsen för kontakten",
+        "LABEL": "Plats"
+      },
+      "COMPANY_NAME": {
+        "PLACEHOLDER": "Ange företagets namn",
+        "LABEL": "Företagsnamn"
+      },
+      "SOCIAL_PROFILES": {
+        "FACEBOOK": {
+          "PLACEHOLDER": "Ange Facebook-användarnamn",
+          "LABEL": "Facebook"
+        },
+        "TWITTER": {
+          "PLACEHOLDER": "Ange Twitter-användarnamn",
+          "LABEL": "Twitter"
+        },
+        "LINKEDIN": {
+          "PLACEHOLDER": "Ange LinkedIn-användarnamn",
+          "LABEL": "LinkedIn"
+        },
+        "GITHUB": {
+          "PLACEHOLDER": "Ange Github-användarnamn",
+          "LABEL": "Github"
+        }
+      }
+    },
+    "SUCCESS_MESSAGE": "Contact saved successfully",
+    "CONTACT_ALREADY_EXIST": "Den här e-postadressen används för en annan kontakt.",
+    "ERROR_MESSAGE": "Ett fel uppstod, vänligen försök igen"
+  },
+  "NEW_CONVERSATION": {
+    "BUTTON_LABEL": "Start conversation",
+    "TITLE": "Ny konversation",
+    "DESC": "Start a new conversation by sending a new message.",
+    "NO_INBOX": "Couldn't find an inbox to initiate a new conversation with this contact.",
+    "FORM": {
+      "TO": {
+        "LABEL": "To"
+      },
+      "INBOX": {
+        "LABEL": "Inbox",
+        "ERROR": "Select an inbox"
+      },
+      "MESSAGE": {
+        "LABEL": "Message",
+        "PLACEHOLDER": "Write your message here",
+        "ERROR": "Message can't be empty"
+      },
+      "SUBMIT": "Send message",
+      "CANCEL": "Avbryt",
+      "SUCCESS_MESSAGE": "Message sent!",
+      "ERROR_MESSAGE": "Couldn't send! try again"
+    }
+  },
+  "CONTACTS_PAGE": {
+    "HEADER": "Kontakter",
+    "FIELDS": "Contact fields",
+    "SEARCH_BUTTON": "Sök",
+    "SEARCH_INPUT_PLACEHOLDER": "Sök kontakter",
+    "LIST": {
+      "LOADING_MESSAGE": "Laddar kontakter...",
+      "404": "Inga kontakter matchar din sökning 🔍",
+      "NO_CONTACTS": "There are no available contacts",
+      "TABLE_HEADER": {
+        "NAME": "Namn",
+        "PHONE_NUMBER": "Telefonnummer",
+        "CONVERSATIONS": "Konversationer",
+        "LAST_ACTIVITY": "Last Activity",
+        "COUNTRY": "Country",
+        "CITY": "City",
+        "SOCIAL_PROFILES": "Social Profiles",
+        "COMPANY": "Företag",
+        "EMAIL_ADDRESS": "E-postadress"
+      },
+      "VIEW_DETAILS": "View details"
+    }
+  },
+  "REMINDER": {
+    "ADD_BUTTON": {
+      "BUTTON": "Add",
+      "TITLE": "Shift + Enter to create a task"
+    },
+    "FOOTER": {
+      "DUE_DATE": "Due date",
+      "LABEL_TITLE": "Set type"
+    }
+  },
+  "NOTES": {
+    "HEADER": {
+      "TITLE": "Notes"
+    },
+    "ADD": {
+      "BUTTON": "Add",
+      "PLACEHOLDER": "Add a note",
+      "TITLE": "Shift + Enter to create a note"
+    },
+    "FOOTER": {
+      "BUTTON": "View all notes"
+    }
+  },
+  "EVENTS": {
+    "HEADER": {
+      "TITLE": "Activities"
+    },
+    "BUTTON": {
+      "PILL_BUTTON_NOTES": "notes",
+      "PILL_BUTTON_EVENTS": "events",
+      "PILL_BUTTON_CONVO": "konversationer"
+    }
+  },
+  "CUSTOM_ATTRIBUTES": {
+    "TITLE": "Egna egenskaper",
+    "BUTTON": "Add custom attribute",
+    "ADD": {
+      "TITLE": "Create custom attribute",
+      "DESC": "Add custom information to this contact."
+    },
+    "FORM": {
+      "CREATE": "Add attribute",
+      "CANCEL": "Avbryt",
+      "NAME": {
+        "LABEL": "Custom attribute name",
+        "PLACEHOLDER": "Eg: shopify id",
+        "ERROR": "Invalid custom attribute name"
+      },
+      "VALUE": {
+        "LABEL": "Attribute value",
+        "PLACEHOLDER": "Eg: 11901 "
+      }
+    }
+  },
+  "MERGE_CONTACTS": {
+    "TITLE": "Merge contacts",
+    "DESCRIPTION": "Merge contact is helpful when you have duplicated entries of the same contact. Merging action takes a primary contact and a child contact. After merging, all details in the primary contact will remain the same. If the primary contact doesn't have a field, then the value from the child contact will be used after merging. If a conflict happens, fields in primary contact will remain unaffected, but fields from secondary will be copied to the custom attributes in the primary contact.",
+    "PRIMARY": {
+      "TITLE": "Primary contact"
+    },
+    "CHILD": {
+      "TITLE": "Contact to merge",
+      "PLACEHOLDER": "Choose a contact"
+    },
+    "SUMMARY": {
+      "TITLE": "Summary",
+      "DELETE_WARNING": "Contact of <strong>%{childContactName}</strong>will be deleted.",
+      "ATTRIBUTE_WARNING": "Contact details of <strong>%{childContactName}</strong> will be copied to <strong>%{primaryContactName}</strong>."
+    },
+    "SEARCH": {
+      "ERROR": "ERROR_MESSAGE"
+    },
+    "FORM": {
+      "SUBMIT": " Merge contacts",
+      "CANCEL": "Avbryt",
+      "CHILD_CONTACT": {
+        "ERROR": "Select a child contact to merge"
+      },
+      "SUCCESS_MESSAGE": "Contact merged successfully",
+      "ERROR_MESSAGE": "Could not merge contcts, try again!"
+    }
+  }
+}

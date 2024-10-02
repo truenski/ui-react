@@ -1,0 +1,237 @@
+{
+  "CONTACT_PANEL": {
+    "NOT_AVAILABLE": "Ikke Tilgængelig",
+    "EMAIL_ADDRESS": "E-Mail Adresse",
+    "PHONE_NUMBER": "Telefonnummer",
+    "COPY_SUCCESSFUL": "Kopiering til udklipsholder lykkedes",
+    "COMPANY": "Virksomhed",
+    "LOCATION": "Lokation",
+    "CONVERSATION_TITLE": "Samtaledetaljer",
+    "BROWSER": "Browser",
+    "OS": "Operativsystem",
+    "INITIATED_FROM": "Startet fra",
+    "INITIATED_AT": "Startet fra",
+    "IP_ADDRESS": "IP Address",
+    "NEW_MESSAGE": "New message",
+    "CONVERSATIONS": {
+      "NO_RECORDS_FOUND": "Der er ingen tidligere samtaler tilknyttet denne kontakt.",
+      "TITLE": "Tidligere Samtaler"
+    },
+    "LABELS": {
+      "CONTACT": {
+        "TITLE": "Contact Labels",
+        "ERROR": "Couldn't update labels"
+      },
+      "CONVERSATION": {
+        "TITLE": "Samtale Etiketter",
+        "ADD_BUTTON": "Add Labels"
+      },
+      "LABEL_SELECT": {
+        "TITLE": "Add Labels",
+        "PLACEHOLDER": "Search labels",
+        "NO_RESULT": "No labels found"
+      }
+    },
+    "MUTE_CONTACT": "Gør Samtale Lydløs",
+    "UNMUTE_CONTACT": "Fjern Lydløs",
+    "MUTED_SUCCESS": "Denne samtale er gjort tavs i 6 timer",
+    "UNMUTED_SUCCESS": "Denne samtale er genaktiveret",
+    "SEND_TRANSCRIPT": "Send Udskrift",
+    "EDIT_LABEL": "Rediger"
+  },
+  "EDIT_CONTACT": {
+    "BUTTON_LABEL": "Rediger Kontakt",
+    "TITLE": "Rediger Kontakt",
+    "DESC": "Rediger kontaktoplysninger"
+  },
+  "CREATE_CONTACT": {
+    "BUTTON_LABEL": "New Contact",
+    "TITLE": "Create new contact",
+    "DESC": "Add basic information details about the contact."
+  },
+  "CONTACT_FORM": {
+    "FORM": {
+      "SUBMIT": "Send",
+      "CANCEL": "Annuller",
+      "AVATAR": {
+        "LABEL": "Kontakt Avatar"
+      },
+      "NAME": {
+        "PLACEHOLDER": "Indtast det fulde navn på kontaktpersonen",
+        "LABEL": "Fulde Navn"
+      },
+      "BIO": {
+        "PLACEHOLDER": "Indtast kontaktens bio",
+        "LABEL": "Bio"
+      },
+      "EMAIL_ADDRESS": {
+        "PLACEHOLDER": "Indtast e-mailadressen på kontaktpersonen",
+        "LABEL": "E-Mail Adresse"
+      },
+      "PHONE_NUMBER": {
+        "PLACEHOLDER": "Indtast telefonnummeret på kontaktpersonen",
+        "LABEL": "Telefonnummer",
+        "HELP": "Phone number should be of E.164 format eg: +1415555555 [+][country code][area code][local phone number]",
+        "ERROR": "Phone number should be either empty or of E.164 format"
+      },
+      "LOCATION": {
+        "PLACEHOLDER": "Angiv placeringen af kontaktpersonen",
+        "LABEL": "Lokation"
+      },
+      "COMPANY_NAME": {
+        "PLACEHOLDER": "Indtast virksomhedens navn",
+        "LABEL": "Virksomhedens Navn"
+      },
+      "SOCIAL_PROFILES": {
+        "FACEBOOK": {
+          "PLACEHOLDER": "Indtast Facebook brugernavn",
+          "LABEL": "Facebook"
+        },
+        "TWITTER": {
+          "PLACEHOLDER": "Indtast brugernavn til Twitter",
+          "LABEL": "Twitter"
+        },
+        "LINKEDIN": {
+          "PLACEHOLDER": "Indtast LinkedIn brugernavn",
+          "LABEL": "LinkedIn"
+        },
+        "GITHUB": {
+          "PLACEHOLDER": "Indtast Github brugernavn",
+          "LABEL": "Github"
+        }
+      }
+    },
+    "SUCCESS_MESSAGE": "Contact saved successfully",
+    "CONTACT_ALREADY_EXIST": "Denne e-mail adresse er i brug for en anden kontakt.",
+    "ERROR_MESSAGE": "Der opstod en fejl. Prøv venligst igen"
+  },
+  "NEW_CONVERSATION": {
+    "BUTTON_LABEL": "Start conversation",
+    "TITLE": "New conversation",
+    "DESC": "Start a new conversation by sending a new message.",
+    "NO_INBOX": "Couldn't find an inbox to initiate a new conversation with this contact.",
+    "FORM": {
+      "TO": {
+        "LABEL": "To"
+      },
+      "INBOX": {
+        "LABEL": "Inbox",
+        "ERROR": "Select an inbox"
+      },
+      "MESSAGE": {
+        "LABEL": "Message",
+        "PLACEHOLDER": "Write your message here",
+        "ERROR": "Message can't be empty"
+      },
+      "SUBMIT": "Send message",
+      "CANCEL": "Annuller",
+      "SUCCESS_MESSAGE": "Message sent!",
+      "ERROR_MESSAGE": "Couldn't send! try again"
+    }
+  },
+  "CONTACTS_PAGE": {
+    "HEADER": "Kontakter",
+    "FIELDS": "Contact fields",
+    "SEARCH_BUTTON": "Søg",
+    "SEARCH_INPUT_PLACEHOLDER": "Søg efter kontakter",
+    "LIST": {
+      "LOADING_MESSAGE": "Indlæser kontakter...",
+      "404": "Ingen kontakter matcher din søgning 🔍",
+      "NO_CONTACTS": "There are no available contacts",
+      "TABLE_HEADER": {
+        "NAME": "Navn",
+        "PHONE_NUMBER": "Telefonnummer",
+        "CONVERSATIONS": "Samtaler",
+        "LAST_ACTIVITY": "Last Activity",
+        "COUNTRY": "Country",
+        "CITY": "City",
+        "SOCIAL_PROFILES": "Social Profiles",
+        "COMPANY": "Virksomhed",
+        "EMAIL_ADDRESS": "E-Mail Adresse"
+      },
+      "VIEW_DETAILS": "View details"
+    }
+  },
+  "REMINDER": {
+    "ADD_BUTTON": {
+      "BUTTON": "Add",
+      "TITLE": "Shift + Enter to create a task"
+    },
+    "FOOTER": {
+      "DUE_DATE": "Due date",
+      "LABEL_TITLE": "Set type"
+    }
+  },
+  "NOTES": {
+    "HEADER": {
+      "TITLE": "Notes"
+    },
+    "ADD": {
+      "BUTTON": "Add",
+      "PLACEHOLDER": "Add a note",
+      "TITLE": "Shift + Enter to create a note"
+    },
+    "FOOTER": {
+      "BUTTON": "View all notes"
+    }
+  },
+  "EVENTS": {
+    "HEADER": {
+      "TITLE": "Activities"
+    },
+    "BUTTON": {
+      "PILL_BUTTON_NOTES": "notes",
+      "PILL_BUTTON_EVENTS": "events",
+      "PILL_BUTTON_CONVO": "samtaler"
+    }
+  },
+  "CUSTOM_ATTRIBUTES": {
+    "TITLE": "Brugerdefinerede Egenskaber",
+    "BUTTON": "Add custom attribute",
+    "ADD": {
+      "TITLE": "Create custom attribute",
+      "DESC": "Add custom information to this contact."
+    },
+    "FORM": {
+      "CREATE": "Add attribute",
+      "CANCEL": "Annuller",
+      "NAME": {
+        "LABEL": "Custom attribute name",
+        "PLACEHOLDER": "Eg: shopify id",
+        "ERROR": "Invalid custom attribute name"
+      },
+      "VALUE": {
+        "LABEL": "Attribute value",
+        "PLACEHOLDER": "Eg: 11901 "
+      }
+    }
+  },
+  "MERGE_CONTACTS": {
+    "TITLE": "Merge contacts",
+    "DESCRIPTION": "Merge contact is helpful when you have duplicated entries of the same contact. Merging action takes a primary contact and a child contact. After merging, all details in the primary contact will remain the same. If the primary contact doesn't have a field, then the value from the child contact will be used after merging. If a conflict happens, fields in primary contact will remain unaffected, but fields from secondary will be copied to the custom attributes in the primary contact.",
+    "PRIMARY": {
+      "TITLE": "Primary contact"
+    },
+    "CHILD": {
+      "TITLE": "Contact to merge",
+      "PLACEHOLDER": "Choose a contact"
+    },
+    "SUMMARY": {
+      "TITLE": "Summary",
+      "DELETE_WARNING": "Contact of <strong>%{childContactName}</strong>will be deleted.",
+      "ATTRIBUTE_WARNING": "Contact details of <strong>%{childContactName}</strong> will be copied to <strong>%{primaryContactName}</strong>."
+    },
+    "SEARCH": {
+      "ERROR": "ERROR_MESSAGE"
+    },
+    "FORM": {
+      "SUBMIT": " Merge contacts",
+      "CANCEL": "Annuller",
+      "CHILD_CONTACT": {
+        "ERROR": "Select a child contact to merge"
+      },
+      "SUCCESS_MESSAGE": "Contact merged successfully",
+      "ERROR_MESSAGE": "Could not merge contcts, try again!"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.settings--section {
+    border-bottom: 1px solid $color-border;
+    display: flex;
+    padding: $space-normal $space-normal $space-normal 0;
+  
+    .sub-block-title {
+      color: $color-woot;
+      font-weight: $font-weight-medium;
+      margin-bottom: 0;
+    }
+  
+    .title--section {
+      padding-right: var(--space-large);
+    }
+  }
+
+  
+
+
+
+  

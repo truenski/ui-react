@@ -1,0 +1,71 @@
+{
+  "COMPONENTS": {
+    "FILE_BUBBLE": {
+      "DOWNLOAD": "دانلود",
+      "UPLOADING": "در حال آپلود..."
+    },
+    "FORM_BUBBLE": {
+      "SUBMIT": "ثبت"
+    }
+  },
+  "TEAM_AVAILABILITY": {
+    "ONLINE": "ما آنلاین هستیم",
+    "OFFLINE": "در حال حاضر دردسترس نیستیم"
+  },
+  "REPLY_TIME": {
+    "IN_A_FEW_MINUTES": "معمولاً در عرض چند دقیقه پاسخ می دهند",
+    "IN_A_FEW_HOURS": "معمولاً در عرض چند ساعت پاسخ می دهند",
+    "IN_A_DAY": "به طور معمول در یک روز پاسخ می دهند"
+  },
+  "START_CONVERSATION": "شروع گفتگو",
+  "START_NEW_CONVERSATION": "Start a new conversation",
+  "UNREAD_VIEW": {
+    "VIEW_MESSAGES_BUTTON": "مشاهده پیام‌های جدید",
+    "CLOSE_MESSAGES_BUTTON": "بستن",
+    "COMPANY_FROM": "از",
+    "BOT": "ربات"
+  },
+  "BUBBLE": {
+    "LABEL": "با ما گفتگو کنید"
+  },
+  "POWERED_BY": "قدرت یافته از چت ووت",
+  "EMAIL_PLACEHOLDER": "لطفا ایمیل خود را وارد کنید",
+  "CHAT_PLACEHOLDER": "پیام خود را وارد کنید",
+  "TODAY": "امروز",
+  "YESTERDAY": "دیروز",
+  "PRE_CHAT_FORM": {
+    "FIELDS": {
+      "FULL_NAME": {
+        "LABEL": "نام کامل",
+        "PLACEHOLDER": "لطفا نام کامل خود را وارد کنید",
+        "ERROR": "نام کامل مورد نیاز است"
+      },
+      "EMAIL_ADDRESS": {
+        "LABEL": "ایمیل",
+        "PLACEHOLDER": "لطفا ایمیل خود را وارد کنید",
+        "ERROR": "آدرس ایمیل اشتباه است"
+      },
+      "MESSAGE": {
+        "LABEL": "پیام",
+        "PLACEHOLDER": "لطفا ایمیل خود را وارد کنید",
+        "ERROR": "پیام بسیار کوتاه است"
+      }
+    }
+  },
+  "FILE_SIZE_LIMIT": "File exceeds the {MAXIMUM_FILE_UPLOAD_SIZE} attachment limit",
+  "CHAT_FORM": {
+    "INVALID": {
+      "FIELD": "فیلد نامتعارف"
+    }
+  },
+  "CSAT": {
+    "TITLE": "Rate your conversation",
+    "SUBMITTED_TITLE": "با تشکر از شما برای ثبت رتبه",
+    "PLACEHOLDER": "Tell us more..."
+  },
+  "EMAIL_TRANSCRIPT": {
+    "BUTTON_TEXT": "Request a conversation transcript",
+    "SEND_EMAIL_SUCCESS": "متن گفتگو با موفقیت ارسال شد",
+    "SEND_EMAIL_ERROR": "خطایی پیش آمد. لطفا دوباره امتحان کنید"
+  }
+}

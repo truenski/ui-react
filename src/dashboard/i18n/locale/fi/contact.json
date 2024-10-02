@@ -1,0 +1,237 @@
+{
+  "CONTACT_PANEL": {
+    "NOT_AVAILABLE": "Ei saatavilla",
+    "EMAIL_ADDRESS": "Sähköpostiosoite",
+    "PHONE_NUMBER": "Puhelinnumero",
+    "COPY_SUCCESSFUL": "Kopioitu leikepöydälle onnistuneesti",
+    "COMPANY": "Yritys",
+    "LOCATION": "Sijainti",
+    "CONVERSATION_TITLE": "Keskustelutiedot",
+    "BROWSER": "Selain",
+    "OS": "Käyttöjärjestelmä",
+    "INITIATED_FROM": "Aloitettu lähteestä",
+    "INITIATED_AT": "Aloitettu lähteestä",
+    "IP_ADDRESS": "IP-osoite",
+    "NEW_MESSAGE": "Uusi viesti",
+    "CONVERSATIONS": {
+      "NO_RECORDS_FOUND": "Tähän yhteystietoon ei liity aikaisempia keskusteluja.",
+      "TITLE": "Edelliset keskustelut"
+    },
+    "LABELS": {
+      "CONTACT": {
+        "TITLE": "Contact Labels",
+        "ERROR": "Couldn't update labels"
+      },
+      "CONVERSATION": {
+        "TITLE": "Keskustelutunnisteet",
+        "ADD_BUTTON": "Add Labels"
+      },
+      "LABEL_SELECT": {
+        "TITLE": "Add Labels",
+        "PLACEHOLDER": "Search labels",
+        "NO_RESULT": "No labels found"
+      }
+    },
+    "MUTE_CONTACT": "Mykistä Keskustelu",
+    "UNMUTE_CONTACT": "Poista keskustelun mykistys",
+    "MUTED_SUCCESS": "Tämä keskustelu on mykistetty 6 tunniksi",
+    "UNMUTED_SUCCESS": "Tätä keskustelua ei ole hiljennetty",
+    "SEND_TRANSCRIPT": "Lähetä keskustelu",
+    "EDIT_LABEL": "Muokkaa"
+  },
+  "EDIT_CONTACT": {
+    "BUTTON_LABEL": "Muokkaa yhteystietoa",
+    "TITLE": "Muokkaa yhteystietoa",
+    "DESC": "Muokkaa yhteystietoja"
+  },
+  "CREATE_CONTACT": {
+    "BUTTON_LABEL": "Uusi kontakti",
+    "TITLE": "Luo uusi kontakti",
+    "DESC": "Lisää kontaktin yhteystiedot."
+  },
+  "CONTACT_FORM": {
+    "FORM": {
+      "SUBMIT": "Lähetä",
+      "CANCEL": "Peruuta",
+      "AVATAR": {
+        "LABEL": "Yhteystiedon profiilikuva"
+      },
+      "NAME": {
+        "PLACEHOLDER": "Syötä yhteystiedon koko nimi",
+        "LABEL": "Koko nimi"
+      },
+      "BIO": {
+        "PLACEHOLDER": "Kirjoita yhteystiedon kuvaus",
+        "LABEL": "Kuvaus"
+      },
+      "EMAIL_ADDRESS": {
+        "PLACEHOLDER": "Anna yhteyshenkilön sähköpostiosoite",
+        "LABEL": "Sähköpostiosoite"
+      },
+      "PHONE_NUMBER": {
+        "PLACEHOLDER": "Anna yhteystiedon puhelinnumero",
+        "LABEL": "Puhelinnumero",
+        "HELP": "Phone number should be of E.164 format eg: +1415555555 [+][country code][area code][local phone number]",
+        "ERROR": "Phone number should be either empty or of E.164 format"
+      },
+      "LOCATION": {
+        "PLACEHOLDER": "Anna yhteystiedon sijainti",
+        "LABEL": "Sijainti"
+      },
+      "COMPANY_NAME": {
+        "PLACEHOLDER": "Anna yrityksen nimi",
+        "LABEL": "Yrityksen nimi"
+      },
+      "SOCIAL_PROFILES": {
+        "FACEBOOK": {
+          "PLACEHOLDER": "Syötä Facebookin käyttäjätunnus",
+          "LABEL": "Facebook"
+        },
+        "TWITTER": {
+          "PLACEHOLDER": "Syötä Twitterin käyttäjätunnus",
+          "LABEL": "Twitter"
+        },
+        "LINKEDIN": {
+          "PLACEHOLDER": "Syötä LinkedIn-käyttäjänimi",
+          "LABEL": "LinkedIn"
+        },
+        "GITHUB": {
+          "PLACEHOLDER": "Syötä Github-käyttäjänimi",
+          "LABEL": "Github"
+        }
+      }
+    },
+    "SUCCESS_MESSAGE": "Kontakti tallennettu onnistuneesti",
+    "CONTACT_ALREADY_EXIST": "Tämä sähköpostiosoite on käytössä toiselle yhteyshenkilölle.",
+    "ERROR_MESSAGE": "Tapahtui virhe, yritä uudelleen"
+  },
+  "NEW_CONVERSATION": {
+    "BUTTON_LABEL": "Aloita keskustelu",
+    "TITLE": "Uusi keskustelu",
+    "DESC": "Aloita uusi keskustelu lähettämällä uusi viesti.",
+    "NO_INBOX": "Couldn't find an inbox to initiate a new conversation with this contact.",
+    "FORM": {
+      "TO": {
+        "LABEL": "To"
+      },
+      "INBOX": {
+        "LABEL": "Inbox",
+        "ERROR": "Select an inbox"
+      },
+      "MESSAGE": {
+        "LABEL": "Message",
+        "PLACEHOLDER": "Write your message here",
+        "ERROR": "Message can't be empty"
+      },
+      "SUBMIT": "Send message",
+      "CANCEL": "Peruuta",
+      "SUCCESS_MESSAGE": "Message sent!",
+      "ERROR_MESSAGE": "Couldn't send! try again"
+    }
+  },
+  "CONTACTS_PAGE": {
+    "HEADER": "Yhteystiedot",
+    "FIELDS": "Contact fields",
+    "SEARCH_BUTTON": "Etsi",
+    "SEARCH_INPUT_PLACEHOLDER": "Etsi yhteystietoja",
+    "LIST": {
+      "LOADING_MESSAGE": "Ladataan yhteystietoja...",
+      "404": "Ei hakua vastaavia yhteystietoja 🔍",
+      "NO_CONTACTS": "There are no available contacts",
+      "TABLE_HEADER": {
+        "NAME": "Nimi",
+        "PHONE_NUMBER": "Puhelinnumero",
+        "CONVERSATIONS": "Keskustelut",
+        "LAST_ACTIVITY": "Last Activity",
+        "COUNTRY": "Country",
+        "CITY": "City",
+        "SOCIAL_PROFILES": "Social Profiles",
+        "COMPANY": "Yritys",
+        "EMAIL_ADDRESS": "Sähköpostiosoite"
+      },
+      "VIEW_DETAILS": "View details"
+    }
+  },
+  "REMINDER": {
+    "ADD_BUTTON": {
+      "BUTTON": "Add",
+      "TITLE": "Shift + Enter to create a task"
+    },
+    "FOOTER": {
+      "DUE_DATE": "Due date",
+      "LABEL_TITLE": "Set type"
+    }
+  },
+  "NOTES": {
+    "HEADER": {
+      "TITLE": "Notes"
+    },
+    "ADD": {
+      "BUTTON": "Add",
+      "PLACEHOLDER": "Add a note",
+      "TITLE": "Shift + Enter to create a note"
+    },
+    "FOOTER": {
+      "BUTTON": "View all notes"
+    }
+  },
+  "EVENTS": {
+    "HEADER": {
+      "TITLE": "Activities"
+    },
+    "BUTTON": {
+      "PILL_BUTTON_NOTES": "notes",
+      "PILL_BUTTON_EVENTS": "events",
+      "PILL_BUTTON_CONVO": "keskustelut"
+    }
+  },
+  "CUSTOM_ATTRIBUTES": {
+    "TITLE": "Mukautetut attribuutit",
+    "BUTTON": "Add custom attribute",
+    "ADD": {
+      "TITLE": "Create custom attribute",
+      "DESC": "Add custom information to this contact."
+    },
+    "FORM": {
+      "CREATE": "Add attribute",
+      "CANCEL": "Peruuta",
+      "NAME": {
+        "LABEL": "Custom attribute name",
+        "PLACEHOLDER": "Eg: shopify id",
+        "ERROR": "Invalid custom attribute name"
+      },
+      "VALUE": {
+        "LABEL": "Attribute value",
+        "PLACEHOLDER": "Eg: 11901 "
+      }
+    }
+  },
+  "MERGE_CONTACTS": {
+    "TITLE": "Merge contacts",
+    "DESCRIPTION": "Merge contact is helpful when you have duplicated entries of the same contact. Merging action takes a primary contact and a child contact. After merging, all details in the primary contact will remain the same. If the primary contact doesn't have a field, then the value from the child contact will be used after merging. If a conflict happens, fields in primary contact will remain unaffected, but fields from secondary will be copied to the custom attributes in the primary contact.",
+    "PRIMARY": {
+      "TITLE": "Primary contact"
+    },
+    "CHILD": {
+      "TITLE": "Contact to merge",
+      "PLACEHOLDER": "Choose a contact"
+    },
+    "SUMMARY": {
+      "TITLE": "Summary",
+      "DELETE_WARNING": "Contact of <strong>%{childContactName}</strong>will be deleted.",
+      "ATTRIBUTE_WARNING": "Contact details of <strong>%{childContactName}</strong> will be copied to <strong>%{primaryContactName}</strong>."
+    },
+    "SEARCH": {
+      "ERROR": "ERROR_MESSAGE"
+    },
+    "FORM": {
+      "SUBMIT": " Merge contacts",
+      "CANCEL": "Peruuta",
+      "CHILD_CONTACT": {
+        "ERROR": "Select a child contact to merge"
+      },
+      "SUCCESS_MESSAGE": "Contact merged successfully",
+      "ERROR_MESSAGE": "Could not merge contcts, try again!"
+    }
+  }
+}

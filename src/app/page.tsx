@@ -1,95 +1,61 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+import React, { useState } from "react";
+import Sidebar from "./components/Sidebar/Sidebar";
+import SnackbarContainer from "./components/Snackbar/SnackbarContainer";
+import ChatFilter from "./containers/ChatFilter/ChatFilter";
+import ChatTypeTabs from "./containers/ChatTypeTabs/ChatTypeTabs";
+import constants from "@/dashboard/constants";
+import "./page.module.scss";
+import ConversationCard from "./containers/ConversationCard/ConversationCard";
+import ChatList from "./containers/ChatList/ChatList";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const [statusFilter, setStatusFilter] = useState(constants.STATUS_TYPE.OPEN);
+  const [activeTab, setActiveTab] = useState(constants.ASSIGNEE_TYPE.ME);
+  const [conversations, setConversations] = useState([]);
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+  const handleStatusFilterChange = (newStatus) => {
+    setStatusFilter(newStatus);
+  };
+
+  const handleChatTabChange = (newTab) => {
+    setActiveTab(newTab);
+  };
+
+  const handleCardClick = (chat) => {
+    console.log("Card clicked:", chat);
+  };
+  return (
+    <>
+      <div className="row app-wrapper">
+        <Sidebar />
+        <section className="app-content columns">
+          {/* <div className="router-view">
+            <ChatList conversationInbox={1} teamId={2} label="support" />
+          </div> */}
+        </section>
+
+        {/* <ChatFilter onStatusFilterChange={handleStatusFilterChange} />
+            <ChatTypeTabs
+              items={[
+                { key: "me", name: "My Chats", count: 10 },
+                { key: "unassigned", name: "Unassigned", count: 5 },
+                { key: "all", name: "All Chats", count: 20 },
+              ]}
+              activeTab={activeTab}
+              onChatTabChange={handleChatTabChange}
             />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+            <div>
+              {conversations.map((chat) => (
+                <ConversationCard
+                  key={chat.id}
+                  chat={chat}
+                  onCardClick={handleCardClick}
+                />
+              ))}
+            </div> */}
+      </div>
+      <SnackbarContainer />
+    </>
   );
 }

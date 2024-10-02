@@ -1,0 +1,85 @@
+{
+  "INTEGRATION_SETTINGS": {
+    "HEADER": "Інтеграції",
+    "WEBHOOK": {
+      "TITLE": "Веб-хук",
+      "CONFIGURE": "Настроїти",
+      "HEADER": "Налаштування вебхука",
+      "HEADER_BTN_TXT": "Додати новий вебхук",
+      "LOADING": "Отримання прикріплених вебхуків",
+      "SEARCH_404": "Немає елементів, що відповідають запиту",
+      "SIDEBAR_TXT": "<p><b>Вебхуки</b> </p> <p>Вебхуки - це виклики по HTTP, які можна налаштувати для кожного облікового запису. Вебхук виклики будуть відбуватися при подіях у Chatwoot, наприклад при нових зверненнях. Ви можете створити один чи кілька вебхуків. <br /><br /> Для створення <b>вебхука</b>, натисніть кнопку <b>Додати новий вебхук</b>. Ви тако можете видаляти вебхуки, натиснувши кнопку Видалити.</p>",
+      "LIST": {
+        "404": "Немає налаштованих вебхуків для цього облікового запису.",
+        "TITLE": "Керування вебхуками",
+        "TABLE_HEADER": [
+          "Кінцева точка вебхука",
+          "Дії"
+        ]
+      },
+      "EDIT": {
+        "BUTTON_TEXT": "Редагувати",
+        "TITLE": "Edit webhook",
+        "CANCEL": "Скасувати",
+        "DESC": "Вебхуки автоматично повідомляють про те, що відбувається у вашому обліковому записі Chatwoot. Будь ласка, введіть дійсний URL для налаштування зворотного виклику.",
+        "FORM": {
+          "END_POINT": {
+            "LABEL": "URL вебхука",
+            "PLACEHOLDER": "Наприклад: https://example/api/webhook",
+            "ERROR": "Будь ласка, введіть правильний URL"
+          },
+          "SUBMIT": "Edit webhook"
+        },
+        "API": {
+          "SUCCESS_MESSAGE": "Webhook URL updated successfully",
+          "ERROR_MESSAGE": "Не вдалося підключитися до Woot Server, спробуйте ще раз пізніше"
+        }
+      },
+      "ADD": {
+        "CANCEL": "Скасувати",
+        "TITLE": "Додати новий вебхук",
+        "DESC": "Вебхуки автоматично повідомляють про те, що відбувається у вашому обліковому записі Chatwoot. Будь ласка, введіть дійсний URL для налаштування зворотного виклику.",
+        "FORM": {
+          "END_POINT": {
+            "LABEL": "URL вебхука",
+            "PLACEHOLDER": "Наприклад: https://example/api/webhook",
+            "ERROR": "Будь ласка, введіть правильний URL"
+          },
+          "SUBMIT": "Створити вебхук"
+        },
+        "API": {
+          "SUCCESS_MESSAGE": "Вебхук успішно додано",
+          "ERROR_MESSAGE": "Не вдалося підключитися до Woot Server, спробуйте ще раз пізніше"
+        }
+      },
+      "DELETE": {
+        "BUTTON_TEXT": "Видалити",
+        "API": {
+          "SUCCESS_MESSAGE": "Вебхук успішно видалено",
+          "ERROR_MESSAGE": "Не вдалося підключитися до Woot Server, спробуйте ще раз пізніше"
+        },
+        "CONFIRM": {
+          "TITLE": "Підтвердження видалення",
+          "MESSAGE": "Справді бажаєте видалити ",
+          "YES": "Так, видалити ",
+          "NO": "Ні, залиште"
+        }
+      }
+    },
+    "SLACK": {
+      "HELP_TEXT": {
+        "TITLE": "Using Slack Integration",
+        "BODY": "<br/><p>Chatwoot will now sync all the incoming conversations into the <b><i>customer-conversations</i></b> channel inside your slack workplace.</p><p>Replying to a conversation thread in <b><i>customer-conversations</i></b> slack channel will create a response back to the customer through chatwoot.</p><p>Start the replies with <b><i>note:</i></b> to create private notes instead of replies.</p><p>If the replier on slack has an agent profile in chatwoot under the same email, the replies will be associated accordingly.</p><p>When the replier doesn't have an associated agent profile, the replies will be made from the bot profile.</p>"
+      }
+    },
+    "DELETE": {
+      "BUTTON_TEXT": "Видалити",
+      "API": {
+        "SUCCESS_MESSAGE": "Integration deleted successfully"
+      }
+    },
+    "CONNECT": {
+      "BUTTON_TEXT": "Connect"
+    }
+  }
+}

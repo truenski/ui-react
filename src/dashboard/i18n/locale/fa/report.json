@@ -1,0 +1,90 @@
+{
+  "REPORT": {
+    "HEADER": "Overview",
+    "LOADING_CHART": "در حال دریافت اطلاعات...",
+    "NO_ENOUGH_DATA": "متاسفانه اطلاعات کافی دریافت نشد، لطفا بعدا دوباره امتحان کنید",
+    "DOWNLOAD_AGENT_REPORTS": "دانلود گزارش ایجنت",
+    "METRICS": {
+      "CONVERSATIONS": {
+        "NAME": "گفتگوها",
+        "DESC": "( جمع کل )"
+      },
+      "INCOMING_MESSAGES": {
+        "NAME": "پیام‌های ورودی",
+        "DESC": "( جمع کل )"
+      },
+      "OUTGOING_MESSAGES": {
+        "NAME": "پیام‌های خروجی",
+        "DESC": "( جمع کل )"
+      },
+      "FIRST_RESPONSE_TIME": {
+        "NAME": "زمان تا اولین پاسخ",
+        "DESC": "( میانگین )"
+      },
+      "RESOLUTION_TIME": {
+        "NAME": "زمان تا حل شدن مساله",
+        "DESC": "( میانگین )"
+      },
+      "RESOLUTION_COUNT": {
+        "NAME": "تعداد مسائل حل شده",
+        "DESC": "( جمع کل )"
+      }
+    },
+    "DATE_RANGE": [
+      {
+        "id": 0,
+        "name": "در ۷ روز گذشته"
+      },
+      {
+        "id": 1,
+        "name": "در ۳۰ روز گذشته"
+      },
+      {
+        "id": 0,
+        "name": "۳ ماه گذشته"
+      },
+      {
+        "id": 0,
+        "name": "۶ ماه گذشته"
+      },
+      {
+        "id": 0,
+        "name": "پارسال"
+      },
+      {
+        "id": 5,
+        "name": "Custom date range"
+      }
+    ],
+    "CUSTOM_DATE_RANGE": {
+      "CONFIRM": "Apply",
+      "PLACEHOLDER": "Select date range"
+    }
+  },
+  "CSAT_REPORTS": {
+    "HEADER": "CSAT Reports",
+    "NO_RECORDS": "There are no CSAT survey responses available.",
+    "TABLE": {
+      "HEADER": {
+        "CONTACT_NAME": "Contact",
+        "AGENT_NAME": "Assigned agent",
+        "RATING": "رتبه",
+        "FEEDBACK_TEXT": "Feedback comment"
+      }
+    },
+    "METRIC": {
+      "TOTAL_RESPONSES": {
+        "LABEL": "Total responses",
+        "TOOLTIP": "Total number of responses collected"
+      },
+      "SATISFACTION_SCORE": {
+        "LABEL": "Satisfaction score",
+        "TOOLTIP": "Total number of positive responses / Total number of responses * 100"
+      },
+      "RESPONSE_RATE": {
+        "LABEL": "Response rate",
+        "TOOLTIP": "Total number of responses / Total number of CSAT survey messages sent * 100"
+      }
+    }
+  }
+}

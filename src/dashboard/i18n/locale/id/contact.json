@@ -1,0 +1,237 @@
+{
+  "CONTACT_PANEL": {
+    "NOT_AVAILABLE": "Tidak Tersedia",
+    "EMAIL_ADDRESS": "Alamat Email",
+    "PHONE_NUMBER": "Nomor Telpon",
+    "COPY_SUCCESSFUL": "Berhasil disalin ke clipboard",
+    "COMPANY": "Perusahaan",
+    "LOCATION": "Lokasi",
+    "CONVERSATION_TITLE": "Detail Percakapan",
+    "BROWSER": "Browser",
+    "OS": "Sistem Operasi",
+    "INITIATED_FROM": "Dimulai dari",
+    "INITIATED_AT": "Dimulai pada",
+    "IP_ADDRESS": "IP Address",
+    "NEW_MESSAGE": "Pesan baru",
+    "CONVERSATIONS": {
+      "NO_RECORDS_FOUND": "Tidak ada percakapan sebelumnya yang terkait dengan kontak ini.",
+      "TITLE": "Percakapan Sebelumnya"
+    },
+    "LABELS": {
+      "CONTACT": {
+        "TITLE": "Contact Labels",
+        "ERROR": "Couldn't update labels"
+      },
+      "CONVERSATION": {
+        "TITLE": "Label Percakapan",
+        "ADD_BUTTON": "Tambah label"
+      },
+      "LABEL_SELECT": {
+        "TITLE": "Tambah label",
+        "PLACEHOLDER": "Cari label",
+        "NO_RESULT": "Tidak ada label"
+      }
+    },
+    "MUTE_CONTACT": "Mute Percakapan",
+    "UNMUTE_CONTACT": "Unmute Percakapan",
+    "MUTED_SUCCESS": "Percakapan ini di mute selama 6 jam",
+    "UNMUTED_SUCCESS": "Percakapan ini di unmute",
+    "SEND_TRANSCRIPT": "Kirim Transkrip",
+    "EDIT_LABEL": "Edit"
+  },
+  "EDIT_CONTACT": {
+    "BUTTON_LABEL": "Edit Kontak",
+    "TITLE": "Edit kontak",
+    "DESC": "Edit detail kontak"
+  },
+  "CREATE_CONTACT": {
+    "BUTTON_LABEL": "Kontak Baru",
+    "TITLE": "Buat kontak baru",
+    "DESC": "Tambahkan detail informasi dasar tentang kontak tersebut."
+  },
+  "CONTACT_FORM": {
+    "FORM": {
+      "SUBMIT": "Kirim",
+      "CANCEL": "Batalkan",
+      "AVATAR": {
+        "LABEL": "Avatar Kontak"
+      },
+      "NAME": {
+        "PLACEHOLDER": "Masukkan nama lengkap kontak",
+        "LABEL": "Nama Lengkap"
+      },
+      "BIO": {
+        "PLACEHOLDER": "Masukkan biografi kontak",
+        "LABEL": "Biografi"
+      },
+      "EMAIL_ADDRESS": {
+        "PLACEHOLDER": "Masukkan alamat email kontak",
+        "LABEL": "Alamat email"
+      },
+      "PHONE_NUMBER": {
+        "PLACEHOLDER": "Masukkan nomor telepon kontak tersebut",
+        "LABEL": "Nomor Telpon",
+        "HELP": "Phone number should be of E.164 format eg: +1415555555 [+][country code][area code][local phone number]",
+        "ERROR": "Phone number should be either empty or of E.164 format"
+      },
+      "LOCATION": {
+        "PLACEHOLDER": "Masukkan lokasi kontak",
+        "LABEL": "Lokasi"
+      },
+      "COMPANY_NAME": {
+        "PLACEHOLDER": "Masukkan nama perusahaan",
+        "LABEL": "Nama Perusahaan"
+      },
+      "SOCIAL_PROFILES": {
+        "FACEBOOK": {
+          "PLACEHOLDER": "Masukkan nama pengguna facebook",
+          "LABEL": "Facebook"
+        },
+        "TWITTER": {
+          "PLACEHOLDER": "Edit nama pengguna Twitter",
+          "LABEL": "Twitter"
+        },
+        "LINKEDIN": {
+          "PLACEHOLDER": "Edit nama pengguna LinkedIn",
+          "LABEL": "LinkedIn"
+        },
+        "GITHUB": {
+          "PLACEHOLDER": "Edit nama pengguna GitHub",
+          "LABEL": "GitHub"
+        }
+      }
+    },
+    "SUCCESS_MESSAGE": "Kontak berhasil disimpan",
+    "CONTACT_ALREADY_EXIST": "Alamat email ini digunakan untuk kontak lain.",
+    "ERROR_MESSAGE": "Terjadi kesalahan, harap coba lagi"
+  },
+  "NEW_CONVERSATION": {
+    "BUTTON_LABEL": "Mulai Percakapan",
+    "TITLE": "Percakapan baru",
+    "DESC": "Start a new conversation by sending a new message.",
+    "NO_INBOX": "Couldn't find an inbox to initiate a new conversation with this contact.",
+    "FORM": {
+      "TO": {
+        "LABEL": "Ke"
+      },
+      "INBOX": {
+        "LABEL": "Kotak masuk",
+        "ERROR": "Pilih kotak masuk"
+      },
+      "MESSAGE": {
+        "LABEL": "Pesan",
+        "PLACEHOLDER": "Write your message here",
+        "ERROR": "Message can't be empty"
+      },
+      "SUBMIT": "Kirim pesan",
+      "CANCEL": "Batalkan",
+      "SUCCESS_MESSAGE": "Pesan terkirim!",
+      "ERROR_MESSAGE": "Tidak dapat mengirim! coba lagi"
+    }
+  },
+  "CONTACTS_PAGE": {
+    "HEADER": "Kontak",
+    "FIELDS": "Contact fields",
+    "SEARCH_BUTTON": "Cari",
+    "SEARCH_INPUT_PLACEHOLDER": "Cari Kontak",
+    "LIST": {
+      "LOADING_MESSAGE": "Memuat kontak...",
+      "404": "Tidak ada kontak yang cocok dengan pencarian Anda 🔍",
+      "NO_CONTACTS": "There are no available contacts",
+      "TABLE_HEADER": {
+        "NAME": "Nama",
+        "PHONE_NUMBER": "Nomor Telpon",
+        "CONVERSATIONS": "Percakapan",
+        "LAST_ACTIVITY": "Aktivitas Terakhir",
+        "COUNTRY": "Negara",
+        "CITY": "Kota",
+        "SOCIAL_PROFILES": "Profil Sosial",
+        "COMPANY": "Perusahaan",
+        "EMAIL_ADDRESS": "Alamat email"
+      },
+      "VIEW_DETAILS": "Lihat detail"
+    }
+  },
+  "REMINDER": {
+    "ADD_BUTTON": {
+      "BUTTON": "Tambah",
+      "TITLE": "Shift + Enter to create a task"
+    },
+    "FOOTER": {
+      "DUE_DATE": "Due date",
+      "LABEL_TITLE": "Set type"
+    }
+  },
+  "NOTES": {
+    "HEADER": {
+      "TITLE": "Catatan"
+    },
+    "ADD": {
+      "BUTTON": "Tambah",
+      "PLACEHOLDER": "Tambahkan Catatan",
+      "TITLE": "Shift + Enter to create a note"
+    },
+    "FOOTER": {
+      "BUTTON": "View all notes"
+    }
+  },
+  "EVENTS": {
+    "HEADER": {
+      "TITLE": "Activities"
+    },
+    "BUTTON": {
+      "PILL_BUTTON_NOTES": "catatan",
+      "PILL_BUTTON_EVENTS": "events",
+      "PILL_BUTTON_CONVO": "percakapan"
+    }
+  },
+  "CUSTOM_ATTRIBUTES": {
+    "TITLE": "Atribut Kustom",
+    "BUTTON": "Add custom attribute",
+    "ADD": {
+      "TITLE": "Create custom attribute",
+      "DESC": "Add custom information to this contact."
+    },
+    "FORM": {
+      "CREATE": "Add attribute",
+      "CANCEL": "Batalkan",
+      "NAME": {
+        "LABEL": "Custom attribute name",
+        "PLACEHOLDER": "Eg: shopify id",
+        "ERROR": "Invalid custom attribute name"
+      },
+      "VALUE": {
+        "LABEL": "Attribute value",
+        "PLACEHOLDER": "Eg: 11901 "
+      }
+    }
+  },
+  "MERGE_CONTACTS": {
+    "TITLE": "Merge contacts",
+    "DESCRIPTION": "Merge contact is helpful when you have duplicated entries of the same contact. Merging action takes a primary contact and a child contact. After merging, all details in the primary contact will remain the same. If the primary contact doesn't have a field, then the value from the child contact will be used after merging. If a conflict happens, fields in primary contact will remain unaffected, but fields from secondary will be copied to the custom attributes in the primary contact.",
+    "PRIMARY": {
+      "TITLE": "Primary contact"
+    },
+    "CHILD": {
+      "TITLE": "Contact to merge",
+      "PLACEHOLDER": "Choose a contact"
+    },
+    "SUMMARY": {
+      "TITLE": "Summary",
+      "DELETE_WARNING": "Contact of <strong>%{childContactName}</strong>will be deleted.",
+      "ATTRIBUTE_WARNING": "Contact details of <strong>%{childContactName}</strong> will be copied to <strong>%{primaryContactName}</strong>."
+    },
+    "SEARCH": {
+      "ERROR": "ERROR_MESSAGE"
+    },
+    "FORM": {
+      "SUBMIT": " Merge contacts",
+      "CANCEL": "Batalkan",
+      "CHILD_CONTACT": {
+        "ERROR": "Select a child contact to merge"
+      },
+      "SUCCESS_MESSAGE": "Contact merged successfully",
+      "ERROR_MESSAGE": "Could not merge contcts, try again!"
+    }
+  }
+}

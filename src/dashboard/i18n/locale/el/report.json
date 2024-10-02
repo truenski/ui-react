@@ -1,0 +1,90 @@
+{
+  "REPORT": {
+    "HEADER": "Overview",
+    "LOADING_CHART": "Φόρτωση δεδομένων γραφήματος...",
+    "NO_ENOUGH_DATA": "Δεν έχουν ληφθεί αρκετά σημεία δεδομένων για την δημιουργία της αναφοράς, Παρακαλώ προσπαθήστε αργότερα.",
+    "DOWNLOAD_AGENT_REPORTS": "Κατέβασμα αναφορών πράκτορα",
+    "METRICS": {
+      "CONVERSATIONS": {
+        "NAME": "Συζητήσεις",
+        "DESC": "(Σύνολο)"
+      },
+      "INCOMING_MESSAGES": {
+        "NAME": "Εισερχόμενα Μηνύματα",
+        "DESC": "(Σύνολο)"
+      },
+      "OUTGOING_MESSAGES": {
+        "NAME": "Εξερχόμενα Μηνύματα",
+        "DESC": "(Σύνολο)"
+      },
+      "FIRST_RESPONSE_TIME": {
+        "NAME": "Χρόνος πρώτης ανταπόκρισης",
+        "DESC": "(Μ.Ο.)"
+      },
+      "RESOLUTION_TIME": {
+        "NAME": "Χρόνος ανάλυσης",
+        "DESC": "(Μ.Ο.)"
+      },
+      "RESOLUTION_COUNT": {
+        "NAME": "Αριθμός Αναλύσεων",
+        "DESC": "(Σύνολο)"
+      }
+    },
+    "DATE_RANGE": [
+      {
+        "id": 0,
+        "name": "Τελευταίες 7 ημέρες"
+      },
+      {
+        "id": 1,
+        "name": "Τελευταίες 30 ημέρες"
+      },
+      {
+        "id": 2,
+        "name": "Τελευταίοι 3 μήνες"
+      },
+      {
+        "id": 3,
+        "name": "Τελευταίοι 6 μήνες"
+      },
+      {
+        "id": 4,
+        "name": "Τελευταίο έτος"
+      },
+      {
+        "id": 5,
+        "name": "Custom date range"
+      }
+    ],
+    "CUSTOM_DATE_RANGE": {
+      "CONFIRM": "Apply",
+      "PLACEHOLDER": "Select date range"
+    }
+  },
+  "CSAT_REPORTS": {
+    "HEADER": "CSAT Reports",
+    "NO_RECORDS": "There are no CSAT survey responses available.",
+    "TABLE": {
+      "HEADER": {
+        "CONTACT_NAME": "Contact",
+        "AGENT_NAME": "Assigned agent",
+        "RATING": "Rating",
+        "FEEDBACK_TEXT": "Feedback comment"
+      }
+    },
+    "METRIC": {
+      "TOTAL_RESPONSES": {
+        "LABEL": "Total responses",
+        "TOOLTIP": "Total number of responses collected"
+      },
+      "SATISFACTION_SCORE": {
+        "LABEL": "Satisfaction score",
+        "TOOLTIP": "Total number of positive responses / Total number of responses * 100"
+      },
+      "RESPONSE_RATE": {
+        "LABEL": "Response rate",
+        "TOOLTIP": "Total number of responses / Total number of CSAT survey messages sent * 100"
+      }
+    }
+  }
+}
