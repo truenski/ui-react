@@ -1,18 +1,41 @@
-// components/ConversationCard.js
+// components/ConversationCard.tsx
 import React from "react";
 import { formatDistanceToNow, fromUnixTime } from "date-fns";
-import constants from "@/dashboard/constants";
-import { ConversationCardProps } from "./ConversationCard.types";
 import Thumbnail from "../Thumbnail/Thumbnail";
 
-const ConversationCard = ({
+interface ConversationCardProps {
+  chat: {
+    id: number;
+    meta: {
+      sender: {
+        name: string;
+        thumbnail: string;
+        availability_status: string;
+      };
+      channel: string;
+    };
+    messages: {
+      id: number;
+      content: string;
+      created_at: number;
+      message_type: number;
+      private: boolean;
+    }[];
+    agent_last_seen_at: number;
+    timestamp: number;
+  };
+  activeLabel?: string;
+  hideInboxName?: boolean;
+  hideThumbnail?: boolean;
+  teamId?: number;
+  onCardClick?: (chat: any) => void;
+}
+
+const ConversationCard: React.FC<ConversationCardProps> = ({
   chat,
-  activeLabel,
-  hideInboxName,
   hideThumbnail,
-  teamId,
   onCardClick,
-}: ConversationCardProps) => {
+}) => {
   const currentContact = chat.meta.sender;
   const lastMessageInChat = chat.messages[chat.messages.length - 1];
   const unreadCount = chat.messages.filter(
@@ -28,10 +51,11 @@ const ConversationCard = ({
   return (
     <div
       className={`conversation ${hasUnread ? "unread-chat" : ""}`}
-      onClick={() => onCardClick(chat)}
+      onClick={() => onCardClick && onCardClick(chat)}
     >
       {!hideThumbnail && (
         <Thumbnail
+          hasBorder
           src={currentContact.thumbnail}
           badge={chat.meta.channel}
           username={currentContact.name}

@@ -1,0 +1,19 @@
+
+.dropdown-menu__item {
+    list-style: none;
+  
+    ::v-deep {
+      a,
+      .button {
+        width: 100%;
+        text-align: left;
+        white-space: nowrap;
+        display: inline-flex;
+        border-radius: var(--border-radius-normal);
+  
+        &:hover {
+          background: var(--color-background);
+        }
+      }
+    }
+  }

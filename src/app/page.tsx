@@ -1,61 +1,38 @@
 "use client";
-import React, { useState } from "react";
-import Sidebar from "./components/Sidebar/Sidebar";
-import SnackbarContainer from "./components/Snackbar/SnackbarContainer";
-import ChatFilter from "./containers/ChatFilter/ChatFilter";
-import ChatTypeTabs from "./containers/ChatTypeTabs/ChatTypeTabs";
-import constants from "@/dashboard/constants";
-import "./page.module.scss";
-import ConversationCard from "./containers/ConversationCard/ConversationCard";
-import ChatList from "./containers/ChatList/ChatList";
+import React from "react";
 
-export default function Home() {
-  const [statusFilter, setStatusFilter] = useState(constants.STATUS_TYPE.OPEN);
-  const [activeTab, setActiveTab] = useState(constants.ASSIGNEE_TYPE.ME);
-  const [conversations, setConversations] = useState([]);
+import "@/dashboard/assets/scss/app.scss";
+import "@/dashboard/assets/scss/super_admin/index.scss";
+import "./thumbnail.scss";
+import "./conversationCard.scss";
+import "./chatlist.scss";
+//2
+import "./conversationPage.scss";
+import "./popoverSearch.scss";
+import "./conversationBox.scss";
+import "./conversation/ConversationHeader/index.modules.scss";
+import "./contactPanel.scss";
+import "./conversationEmptyState.scss";
+import { ConversationList } from "./ConversationList";
+import MessagesView from "./Conversation/MessagesView";
+import ConversationBox from "./Conversation/ConversationBox/ConversationBox";
 
-  const handleStatusFilterChange = (newStatus) => {
-    setStatusFilter(newStatus);
-  };
-
-  const handleChatTabChange = (newTab) => {
-    setActiveTab(newTab);
-  };
-
-  const handleCardClick = (chat) => {
-    console.log("Card clicked:", chat);
+// Main App component
+const App = () => {
+  const [isContactPanelOpen, setIsContactPanelOpen] = React.useState(false);
+  const handleContactPanelToggle = () => {
+    setIsContactPanelOpen(!isContactPanelOpen);
   };
   return (
-    <>
-      <div className="row app-wrapper">
-        <Sidebar />
-        <section className="app-content columns">
-          {/* <div className="router-view">
-            <ChatList conversationInbox={1} teamId={2} label="support" />
-          </div> */}
-        </section>
-
-        {/* <ChatFilter onStatusFilterChange={handleStatusFilterChange} />
-            <ChatTypeTabs
-              items={[
-                { key: "me", name: "My Chats", count: 10 },
-                { key: "unassigned", name: "Unassigned", count: 5 },
-                { key: "all", name: "All Chats", count: 20 },
-              ]}
-              activeTab={activeTab}
-              onChatTabChange={handleChatTabChange}
-            />
-            <div>
-              {conversations.map((chat) => (
-                <ConversationCard
-                  key={chat.id}
-                  chat={chat}
-                  onCardClick={handleCardClick}
-                />
-              ))}
-            </div> */}
-      </div>
-      <SnackbarContainer />
-    </>
+    <div className="chat-app">
+      <ConversationList activeLabel="" teamId={0} />
+      <ConversationBox
+        inboxId={1} // Mock inboxId
+        isContactPanelOpen={isContactPanelOpen}
+        onContactPanelToggle={handleContactPanelToggle}
+      />
+    </div>
   );
-}
+};
+
+export default App;

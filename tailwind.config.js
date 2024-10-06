@@ -1,16 +1,12 @@
-const { colors } = require('tailwindcss/defaultTheme');
-
 module.exports = {
-  purge: [
-    './src/widget/**/*.vue',
-    './src/shared/**/*.vue',
-  ],
   future: {
     removeDeprecatedGapUtilities: true,
+    // purgeLayersByDefault: true,
   },
+  purge: [],
   theme: {
     colors: {
-      white: colors.white,
+      white: "#fff",
       woot: {
         50: '#E3F2FF',
         100: '#BBDDFF',
@@ -88,4 +84,4 @@ module.exports = {
   },
   variants: {},
   plugins: [],
-};
+}

@@ -1,0 +1,41 @@
+
+.send-button {
+    margin-bottom: 0;
+  }
+  
+  .attachment-preview-box {
+    padding: 0 var(--space-normal);
+    background: transparent;
+  }
+  
+  .reply-box {
+    border-top: 1px solid var(--color-border);
+    background: white;
+  
+    &.is-private {
+      background: var(--y-50);
+    }
+  }
+  .send-button {
+    margin-bottom: 0;
+  }
+  
+  .reply-box__top {
+    padding: 0 var(--space-normal);
+    border-top: 1px solid var(--color-border);
+    margin-top: -1px;
+  }
+  
+  .emoji-dialog {
+    top: unset;
+    bottom: 12px;
+    left: -320px;
+    right: unset;
+  
+    &::before {
+      right: -16px;
+      bottom: 10px;
+      transform: rotate(270deg);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.08));
+    }
+  }

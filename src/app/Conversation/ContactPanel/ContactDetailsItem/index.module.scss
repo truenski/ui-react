@@ -1,0 +1,30 @@
+
+.conv-details--item {
+    overflow: auto;
+    .conv-details--item__label {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+  
+      .edit-button {
+        padding: 0;
+      }
+    }
+  
+    .conv-details--item__value {
+      word-break: break-all;
+      margin-left: var(--space-medium);
+      margin-bottom: var(--space-normal);
+    }
+  
+    .title--icon .icon--emoji,
+    .title--icon .icon--font {
+      display: inline-block;
+      width: var(--space-medium);
+    }
+  
+    .title--icon {
+      display: flex;
+      align-items: center;
+    }
+  }

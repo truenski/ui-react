@@ -40,6 +40,8 @@ const Thumbnail = ({
           alt="image"
           id="image"
           src={src}
+          width={avatarSize}
+          height={avatarSize}
           className={thumbnailClass}
           onError={onImgError}
         />
@@ -51,6 +53,8 @@ const Thumbnail = ({
           alt="image"
           id="badge"
           className="source-badge"
+          width={avatarSize}
+          height={avatarSize}
           style={badgeStyle}
           src="/images/fb-badge.png"
         />
@@ -60,6 +64,8 @@ const Thumbnail = ({
           alt="image"
           id="badge"
           className="source-badge"
+          width={avatarSize}
+          height={avatarSize}
           style={badgeStyle}
           src="/images/twitter-badge.png"
         />
@@ -69,6 +75,8 @@ const Thumbnail = ({
           alt="image"
           id="badge"
           className="source-badge"
+          width={avatarSize}
+          height={avatarSize}
           style={badgeStyle}
           src="/images/channels/whatsapp.png"
         />

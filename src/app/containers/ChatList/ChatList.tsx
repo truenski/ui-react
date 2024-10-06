@@ -1,13 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React, { useState } from "react";
 import constants from "@/dashboard/constants";
-import {
-  fetchAllConversations,
-  setChatFilter,
-  resetConversationPage,
-  emptyAllConversations,
-} from "@/app/store/conversationActions";
-import { RootState } from "@/app/store";
 import "./ChatList.modules.scss";
 import ChatTypeTabs from "../ChatTypeTabs/ChatTypeTabs";
 import ConversationCard from "../ConversationCard/ConversationCard";
@@ -24,16 +16,108 @@ const ChatList: React.FC<ChatListProps> = ({
   teamId = 0,
   label = "",
 }) => {
-  const dispatch = useDispatch();
   const [activeAssigneeTab, setActiveAssigneeTab] = useState(
     constants.ASSIGNEE_TYPE.ME
   );
   const [activeStatus, setActiveStatus] = useState(constants.STATUS_TYPE.OPEN);
+
   const mockState = {
-    chatLists: [{ id: 1, message: "Test conversation" }],
-    mineChatsList: () => [{ id: 1, message: "My chat" }],
-    allChatList: () => [{ id: 1, message: "All chat" }],
-    unAssignedChatsList: () => [{ id: 1, message: "Unassigned chat" }],
+    chatLists: [
+      {
+        id: 1,
+        meta: {
+          sender: {
+            name: "John Doe",
+            thumbnail: "/images/user-thumbnail.png",
+            availability_status: "online",
+          },
+          channel: "Channel::FacebookPage",
+        },
+        messages: [
+          {
+            id: 1,
+            content: "Hello, how can I help you?",
+            created_at: 1625247600,
+            message_type: 0,
+            private: false,
+          },
+        ],
+        agent_last_seen_at: 1625247600,
+        timestamp: 1625247600,
+      },
+    ],
+    mineChatsList: [
+      {
+        id: 1,
+        meta: {
+          sender: {
+            name: "John Doe",
+            thumbnail: "/images/user-thumbnail.png",
+            availability_status: "online",
+          },
+          channel: "Channel::FacebookPage",
+        },
+        messages: [
+          {
+            id: 1,
+            content: "Hello, how can I help you?",
+            created_at: 1625247600,
+            message_type: 0,
+            private: false,
+          },
+        ],
+        agent_last_seen_at: 1625247600,
+        timestamp: 1625247600,
+      },
+    ],
+    allChatList: [
+      {
+        id: 1,
+        meta: {
+          sender: {
+            name: "John Doe",
+            thumbnail: "/images/user-thumbnail.png",
+            availability_status: "online",
+          },
+          channel: "Channel::FacebookPage",
+        },
+        messages: [
+          {
+            id: 1,
+            content: "Hello, how can I help you?",
+            created_at: 1625247600,
+            message_type: 0,
+            private: false,
+          },
+        ],
+        agent_last_seen_at: 1625247600,
+        timestamp: 1625247600,
+      },
+    ],
+    unAssignedChatsList: [
+      {
+        id: 1,
+        meta: {
+          sender: {
+            name: "John Doe",
+            thumbnail: "/images/user-thumbnail.png",
+            availability_status: "online",
+          },
+          channel: "Channel::FacebookPage",
+        },
+        messages: [
+          {
+            id: 1,
+            content: "Hello, how can I help you?",
+            created_at: 1625247600,
+            message_type: 0,
+            private: false,
+          },
+        ],
+        agent_last_seen_at: 1625247600,
+        timestamp: 1625247600,
+      },
+    ],
     chatListLoading: false,
     currentUserID: 123,
     activeInbox: { id: 1, name: "Inbox 1" },
@@ -43,86 +127,22 @@ const ChatList: React.FC<ChatListProps> = ({
   };
 
   const {
-    // chatLists,
     mineChatsList,
     allChatList,
     unAssignedChatsList,
     chatListLoading,
-    // currentUserID,
     activeInbox,
     conversationStats,
     currentPage,
     hasCurrentPageEndReached,
   } = mockState;
 
-  // const {
-  //   // chatLists,
-  //   mineChatsList,
-  //   allChatList,
-  //   unAssignedChatsList,
-  //   chatListLoading,
-  //   // currentUserID,
-  //   activeInbox,
-  //   conversationStats,
-  //   currentPage,
-  //   hasCurrentPageEndReached,
-  // } = useSelector((state: RootState) => ({
-  //   chatLists: state.conversation.conversations,
-  //   mineChatsList: state.conversation.mineChatsList,
-  //   allChatList: state.conversation.allChatList,
-  //   unAssignedChatsList: state.conversation.unAssignedChatsList,
-  //   chatListLoading: state.conversation.loading,
-  //   currentUserID: state.auth.currentUserID,
-  //   activeInbox: state.inbox.activeInbox,
-  //   conversationStats: state.conversationStats.stats,
-  //   currentPage: state.conversationPage.currentPage,
-  //   hasCurrentPageEndReached: state.conversationPage.hasEndReached,
-  // }));
-
-  useEffect(() => {
-    dispatch(setChatFilter(activeStatus));
-    resetAndFetchData();
-
-    const fetchConversationStats = () => {
-      dispatch(fetchAllConversations(conversationFilters));
-    };
-
-    window.addEventListener("fetch_conversation_stats", fetchConversationStats);
-
-    return () => {
-      window.removeEventListener(
-        "fetch_conversation_stats",
-        fetchConversationStats
-      );
-    };
-  }, [activeStatus, activeAssigneeTab, conversationInbox, label, teamId]);
-
-  const resetAndFetchData = () => {
-    dispatch(resetConversationPage());
-    dispatch(emptyAllConversations());
-    fetchConversations();
-  };
-
-  const fetchConversations = () => {
-    dispatch(fetchAllConversations(conversationFilters)).then(() => {
-      // Emit event for conversation load
-    });
-  };
-
   const updateAssigneeTab = (selectedTab: string) => {
-    if (activeAssigneeTab !== selectedTab) {
-      setActiveAssigneeTab(selectedTab);
-      if (!currentPage) {
-        fetchConversations();
-      }
-    }
+    setActiveAssigneeTab(selectedTab);
   };
 
   const updateStatusType = (index: string) => {
-    if (activeStatus !== index) {
-      setActiveStatus(index);
-      resetAndFetchData();
-    }
+    setActiveStatus(index);
   };
 
   const conversationFilters = {
@@ -147,11 +167,11 @@ const ChatList: React.FC<ChatListProps> = ({
   const conversationList = (() => {
     let list = [];
     if (activeAssigneeTab === "me") {
-      list = [...mineChatsList(conversationFilters)];
+      list = [...mineChatsList];
     } else if (activeAssigneeTab === "unassigned") {
-      list = [...unAssignedChatsList(conversationFilters)];
+      list = [...unAssignedChatsList];
     } else {
-      list = [...allChatList(conversationFilters)];
+      list = [...allChatList];
     }
     return list;
   })();
@@ -204,10 +224,7 @@ const ChatList: React.FC<ChatListProps> = ({
         )}
 
         {!hasCurrentPageEndReached && !chatListLoading && (
-          <button
-            className="woot-button clear expanded"
-            onClick={fetchConversations}
-          >
+          <button className="woot-button clear expanded">
             Load More Conversations
           </button>
         )}

@@ -1,0 +1,18 @@
+
+@import '~dashboard/assets/scss/variables';
+.status-badge {
+  width: var(--space-one);
+  height: var(--space-one);
+  margin-right: var(--space-micro);
+  display: inline-block;
+  border-radius: 50%;
+  &__online {
+    background: var(--g-400);
+  }
+  &__offline {
+    background: var(--b-600);
+  }
+  &__busy {
+    background: var(--y-700);
+  }
+}

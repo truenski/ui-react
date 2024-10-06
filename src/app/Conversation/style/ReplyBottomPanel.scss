@@ -1,0 +1,52 @@
+.bottom-box {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-slab) var(--space-normal);
+  
+    &.is-note-mode {
+      background: var(--y-50);
+    }
+  }
+  
+  .left-wrap .button {
+    margin-right: var(--space-small);
+  }
+  
+  .left-wrap {
+    align-items: center;
+    display: flex;
+  }
+  
+  .right-wrap {
+    display: flex;
+  
+    .enter-to-send--checkbox {
+      align-items: center;
+      display: flex;
+  
+      input {
+        margin: 0;
+      }
+  
+      label {
+        color: var(--s-500);
+        font-size: var(--font-size-mini);
+      }
+    }
+  }
+  
+  .modal-mask {
+    color: var(--s-600);
+    background: var(--white-transparent);
+    flex-direction: column;
+  }
+  
+  .page-sub-title {
+    color: var(--s-600);
+  }
+  
+  .icon {
+    font-size: 8rem;
+  }
+
+  

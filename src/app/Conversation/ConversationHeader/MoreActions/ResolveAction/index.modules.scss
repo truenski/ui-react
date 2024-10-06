@@ -1,0 +1,15 @@
+
+.resolve-actions {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .dropdown-pane {
+    left: unset;
+    top: 4.2rem;
+    margin-top: var(--space-micro);
+    right: 0;
+    max-width: 20rem;
+  }

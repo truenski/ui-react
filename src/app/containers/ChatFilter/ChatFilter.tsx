@@ -16,7 +16,7 @@ const ChatFilter = ({ onStatusFilterChange }: ChatFilterProps) => {
     { VALUE: "open", TEXT: "Open" },
     { VALUE: "resolved", TEXT: "Resolved" },
     { VALUE: "bot", TEXT: "Bot" },
-    // Adicione outros status conforme necessário
+    // Add other statuses as needed
   ];
 
   return (

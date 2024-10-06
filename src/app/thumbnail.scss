@@ -1,0 +1,46 @@
+
+
+@import '~dashboard/assets/scss/variables';
+@import '~dashboard/assets/scss/foundation-settings';
+@import '~dashboard/assets/scss/mixins';
+
+.user-thumbnail-box {
+  @include flex-shrink;
+  position: relative;
+
+  .user-thumbnail {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+
+    &.border {
+      border: 1px solid white;
+    }
+  }
+
+  .source-badge {
+    bottom: -$space-micro;
+    height: $space-slab;
+    position: absolute;
+    right: $zero;
+    width: $space-slab;
+  }
+
+  .user-online-status {
+    border-radius: 50%;
+    bottom: $space-micro;
+
+    &:after {
+      content: ' ';
+    }
+  }
+
+  .user-online-status--online {
+    background: $success-color;
+  }
+
+  .user-online-status--busy {
+    background: $warning-color;
+  }
+}

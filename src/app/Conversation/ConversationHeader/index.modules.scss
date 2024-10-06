@@ -1,0 +1,31 @@
+@import './MoreActions/index.modules.scss';
+@import './MoreActions/EmailTranscriptModal/index.modules.scss';
+@import './MoreActions/ResolveAction/index.modules.scss';
+@import './MoreActions/WootDRopdown/index.modules.scss';
+@import './MoreActions/WootModal/index.modules.scss';
+@import './MoreActions/AvailabilityStatusBadge/index.modules.scss';
+
+
+
+.text-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .conv-header {
+    flex: 0 0 var(--space-jumbo);
+  }
+  
+  .option__desc {
+    display: flex;
+    align-items: center;
+  }
+  
+  .option__desc {
+    &::v-deep .status-badge {
+      margin-right: var(--space-small);
+      min-width: 0;
+      flex-shrink: 0;
+    }
+  }

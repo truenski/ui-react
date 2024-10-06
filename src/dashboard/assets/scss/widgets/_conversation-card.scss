@@ -19,6 +19,7 @@
   border-top: 1px solid transparent;
   cursor: pointer;
   position: relative;
+  align-items: center;
 
   &.active {
     animation: left-shift-animation .25s $swift-ease-out-function;
@@ -138,6 +139,10 @@
 
     .conversation--message {
       font-weight: $font-weight-bold;
+      text-overflow: ellipsis;
+      width: 85%;
+
+  
     }
 
     .conversation--user {

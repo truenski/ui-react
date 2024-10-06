@@ -43,8 +43,11 @@
 }
 
 .conversations-list-wrap {
+  padding: 4px;
+
   @include flex;
   flex-direction: column;
+  width:min-content;
 
   .load-more-conversations {
     font-size: $font-size-small;
@@ -58,16 +61,23 @@
   }
 
   .conversations-list {
+    width: 400px;
     @include flex-weight(1);
     @include scroll-on-hover;
+
   }
 
   .chat-list__top {
+    justify-content: flex-start;
+    column-gap:4px;
+    
+   
+  
+
     @include flex;
     @include padding($zero $zero $space-micro $zero);
 
     align-items: center;
-    justify-content: space-between;
 
     .page-title {
       margin-bottom: $zero;
@@ -75,8 +85,10 @@
     }
 
     .status--filter {
-      @include padding($zero null $zero $space-normal);
-      @include margin($space-smaller $space-slab $zero $zero);
+      padding:4px;
+
+      // @include padding($zero null $zero $space-normal);
+      @include margin($space-smaller $space-slab $zero $space-slab);
       background-color: $color-background-light;
       border: 1px solid $color-border;
       float: right;

@@ -1,0 +1,24 @@
+
+@import '~dashboard/assets/scss/woot';
+.spinner {
+  margin-top: var(--space-normal);
+  margin-bottom: var(--space-normal);
+}
+
+.conversations-list-wrap {
+  flex-shrink: 0;
+  width: 34rem;
+
+  @include breakpoint(large up) {
+    width: 36rem;
+  }
+  @include breakpoint(xlarge up) {
+    width: 35rem;
+  }
+  @include breakpoint(xxlarge up) {
+    width: 38rem;
+  }
+  @include breakpoint(xxxlarge up) {
+    flex-basis: 46rem;
+  }
+}

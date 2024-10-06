@@ -1,0 +1,22 @@
+
+@import '~dashboard/assets/scss/mixins';
+
+.more--button {
+  align-items: center;
+  display: flex;
+  margin-left: var(--space-small);
+}
+
+.actions--container {
+  position: relative;
+}
+
+.dropdown-pane {
+  right: var(--space-minus-small);
+  top: 48px;
+}
+
+.icon {
+  margin-right: var(--space-smaller);
+  min-width: var(--space-normal);
+}
