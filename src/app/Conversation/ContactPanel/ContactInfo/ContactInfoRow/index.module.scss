@@ -1,0 +1,26 @@
+.contactInfoRow {
+    .contactInfoIcon {
+      font-size: var(--font-size-default);
+      min-width: var(--space-medium);
+    }
+  }
+  
+  .contactInfoDetails {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-small);
+    color: var(--color-body);
+  
+    .copyIcon {
+      margin-left: var(--space-smaller);
+    }
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  .textTruncate {
+    display: inline-block;
+    width: var(--space-medium);
+  }

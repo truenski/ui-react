@@ -1,0 +1,23 @@
+.contactForm {
+    padding: var(--space-normal) var(--space-large) var(--space-large);
+  
+    .columns {
+      padding: 0 var(--space-smaller);
+    }
+  }
+  
+  .input-group-label {
+    font-size: var(--font-size-small);
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .message {
+    color: red;
+  }
+  
+  .callout {
+    color: orange;
+  }

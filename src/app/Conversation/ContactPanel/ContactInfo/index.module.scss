@@ -1,0 +1,44 @@
+.contactProfile {
+    align-items: flex-start;
+    margin-bottom: var(--space-normal);
+  
+    .user-thumbnail-box {
+      margin-right: var(--space-normal);
+    }
+  }
+  
+  .contactDetails {
+    margin-top: var(--space-small);
+    width: 100%;
+  }
+  
+  .contactInfo {
+    text-align: left;
+  }
+  
+  .contactName {
+    text-transform: capitalize;
+    white-space: normal;
+  }
+  
+  .contactMetadata {
+    margin-bottom: var(--space-small);
+  }
+  
+  .contactActions {
+    margin-top: var(--space-small);
+  }
+  
+  .editContact {
+    margin-left: var(--space-medium);
+  }
+  
+  .newMessage {
+    margin-right: var(--space-small);
+  }
+  
+  .contactActions {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }

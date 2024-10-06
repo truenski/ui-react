@@ -14,6 +14,7 @@
     "@sentry/react": "^6.4.1",
     "@sentry/tracing": "^6.4.1",
     "@tweenjs/tween.js": "^25.0.0",
+    "@types/react-onclickoutside": "^6.7.10",
     "axios": "^0.21.1",
     "bourbon": "^6.0.0",
     "chart.js": "~2.9.4",
@@ -34,14 +35,15 @@
     "react": "^18",
     "react-dom": "^18",
     "react-file-upload-component": "^0.2.0",
+    "react-onclickoutside": "^6.13.1",
     "react-redux": "^9.1.2",
     "sass": "^1.79.4",
     "semver": "7.3.5",
     "spinkit": "~1.2.5",
+    "tailwindcss": "^1.9.6",
     "vue-multiselect": "~2.1.9",
     "vue2-datepicker": "^3.11.1",
-    "zod": "^3.23.8",
-    "tailwindcss": "^1.9.6"
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20",

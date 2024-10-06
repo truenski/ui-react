@@ -23,6 +23,9 @@ importers:
       '@tweenjs/tween.js':
         specifier: ^25.0.0
         version: 25.0.0
+      '@types/react-onclickoutside':
+        specifier: ^6.7.10
+        version: 6.7.10
       axios:
         specifier: ^0.21.1
         version: 0.21.4
@@ -83,6 +86,9 @@ importers:
       react-file-upload-component:
         specifier: ^0.2.0
         version: 0.2.0
+      react-onclickoutside:
+        specifier: ^6.13.1
+        version: 6.13.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-redux:
         specifier: ^9.1.2
         version: 9.1.2(@types/react@18.3.10)(react@18.3.1)(redux@5.0.1)
@@ -344,6 +350,9 @@ packages:
 
   '@types/react-dom@18.3.0':
     resolution: {integrity: sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==}
+
+  '@types/react-onclickoutside@6.7.10':
+    resolution: {integrity: sha512-Do2eOuqlJ9amXAuQO5gbhp5MAPnzZ7cknmYqX4U44tX22eAAnHgQKjp3SaNhSAuUHBTANWEqn1N+nWd3ea8FyQ==}
 
   '@types/react@18.3.10':
     resolution: {integrity: sha512-02sAAlBnP39JgXwkAq3PeU9DVaaGpZyF3MGcC0MKgQVkZor5IiiDAipVaxQHtDJAmO4GIy/rVBy/LzVj76Cyqg==}
@@ -1546,6 +1555,12 @@ packages:
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
+  react-onclickoutside@6.13.1:
+    resolution: {integrity: sha512-LdrrxK/Yh9zbBQdFbMTXPp3dTSN9B+9YJQucdDu3JNKRrbdU+H+/TVONJoWtOwy4II8Sqf1y/DTI6w/vGPYW0w==}
+    peerDependencies:
+      react: ^15.5.x || ^16.x || ^17.x || ^18.x
+      react-dom: ^15.5.x || ^16.x || ^17.x || ^18.x
+
   react-redux@9.1.2:
     resolution: {integrity: sha512-0OA4dhM1W48l3uzmv6B7TXPCGmokUU4p1M44DGN2/D9a1FjVPukVjER1PcPX97jIg6aUeLq1XJo1IpfbgULn0w==}
     peerDependencies:
@@ -2126,6 +2141,10 @@ snapshots:
   '@types/prop-types@15.7.13': {}
 
   '@types/react-dom@18.3.0':
+    dependencies:
+      '@types/react': 18.3.10
+
+  '@types/react-onclickoutside@6.7.10':
     dependencies:
       '@types/react': 18.3.10
 
@@ -3547,6 +3566,11 @@ snapshots:
   react-file-upload-component@0.2.0: {}
 
   react-is@16.13.1: {}
+
+  react-onclickoutside@6.13.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   react-redux@9.1.2(@types/react@18.3.10)(react@18.3.1)(redux@5.0.1):
     dependencies:

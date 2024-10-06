@@ -13,24 +13,13 @@ import "./conversationBox.scss";
 import "./conversation/ConversationHeader/index.modules.scss";
 import "./contactPanel.scss";
 import "./conversationEmptyState.scss";
-import { ConversationList } from "./ConversationList";
-import MessagesView from "./Conversation/MessagesView";
-import ConversationBox from "./Conversation/ConversationBox/ConversationBox";
+import ConversationView from "./Conversation/ConversationView";
 
 // Main App component
 const App = () => {
-  const [isContactPanelOpen, setIsContactPanelOpen] = React.useState(false);
-  const handleContactPanelToggle = () => {
-    setIsContactPanelOpen(!isContactPanelOpen);
-  };
   return (
     <div className="chat-app">
-      <ConversationList activeLabel="" teamId={0} />
-      <ConversationBox
-        inboxId={1} // Mock inboxId
-        isContactPanelOpen={isContactPanelOpen}
-        onContactPanelToggle={handleContactPanelToggle}
-      />
+      <ConversationView inboxId={1} conversationId={1} label="" teamId={0} />
     </div>
   );
 };

@@ -1,0 +1,10 @@
+.labelAdd {
+    cursor: pointer;
+    background: transparent;
+    border-color: var(--s-700);
+    margin: 0;
+  
+    &:hover {
+      background: var(--s-50);
+    }
+  }

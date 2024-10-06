@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import MessagesView from "../MessagesView";
 import ConversationHeader from "../ConversationHeader/ConversationHeader";
 import { mockAgentsList, mockCurrentChat, TCurrentChat } from "../mockData";
+import ContactPanel from "../ContactPanel/ContactPanel";
 
 interface ConversationBoxProps {
   inboxId?: number | string;
@@ -49,12 +50,11 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({
         )}
         {showContactPanel && (
           <div className="conversation-sidebar-wrap">
-            {/* <ContactPanel
+            <ContactPanel
               conversationId={currentChat.id}
-              inboxId={currentChat.inbox_id}
+              inboxId={Number(inboxId)}
               onToggle={onContactPanelToggle}
-            /> */}
-            <div>contact panel</div>
+            />
           </div>
         )}
       </div>

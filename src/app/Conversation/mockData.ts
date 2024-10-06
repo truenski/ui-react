@@ -25,7 +25,7 @@ export const mockConstants = {
 export const thumbnailImage =
   "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png";
 
-interface Conversation {
+export interface Conversation {
   id: number;
   meta: {
     sender: { id: number };
@@ -144,6 +144,18 @@ export const mockContacts = {
     },
     lastMessageTime: "2m ago",
     unreadMessages: 2,
+    additional_attributes: {
+      browser: {
+        browser_name: "Chrome",
+        browser_version: "89.0",
+        platform_name: "Windows",
+        platform_version: "10",
+      },
+      referer: "https://example.com",
+      initiated_at: {
+        timestamp: "2023-10-01T12:34:56Z",
+      },
+    },
   },
   102: {
     id: 102,
@@ -253,6 +265,29 @@ export const mockInboxes = {
   1: { name: "chatwoot.app.br", channel_type: "web" },
 };
 
+export type TChat = {
+  id: number;
+  unread_count: number;
+  meta: {
+    sender: {
+      name: string;
+      thumbnail: string;
+      availability_status: string;
+    };
+    channel: string;
+  };
+  messages: {
+    id: number;
+    content: string;
+    created_at: number;
+    message_type: number;
+    private: boolean;
+    attachments?: { file_type: string }[];
+  }[];
+  agent_last_seen_at: number;
+  timestamp: number;
+};
+
 export type TCurrentChat = {
   id: number;
   can_reply: boolean;
@@ -290,11 +325,30 @@ export const mockCurrentChat = {
     channel: "web",
   },
   status: "open",
+  additional_attributes: {
+    browser: {
+      browser_name: "Chrome",
+      browser_version: "89.0",
+      platform_name: "Windows",
+      platform_version: "10",
+    },
+    referer: "https://example.com",
+    initiated_at: {
+      timestamp: "2023-10-01T12:34:56Z",
+    },
+  },
 };
 
 export const mockAgentsList = [
-  { id: 1, name: "Agent 1", availability_status: "online" },
-  { id: 2, name: "Agent 2", availability_status: "offline" },
+  { id: 1, name: "Agent A", availability_status: "available" },
+  { id: 2, name: "Agent B", availability_status: "busy" },
+  { id: 3, name: "Agent C", availability_status: "offline" },
+];
+
+export const mockTeamsList = [
+  { id: 1, name: "Team A" },
+  { id: 2, name: "Team B" },
+  { id: 3, name: "Team C" },
 ];
 
 export const mockUIFlags = {
@@ -347,4 +401,34 @@ export const mockSender = {
   name: "Agent",
   thumbnail: "https://via.placeholder.com/150",
   screen_name: "agent",
+};
+
+export const mockInboxesList = [
+  {
+    id: 1,
+    name: "Inbox 1",
+    channel_type: "email",
+    phone_number: "11 99430-8687",
+  },
+];
+export const mockActiveInbox = null;
+export const mockCurrentUser = { id: 1, name: "User" };
+export const mockAccountId = 1;
+
+export const mockFetchConversations = async ({ q }: { q: string }) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      if (!q) {
+        resolve(mockConversations);
+      } else {
+        const filteredConversations = mockConversations.filter(
+          (conversation) => {
+            const contact = mockContacts[conversation.meta.sender.id];
+            return contact.name.toLowerCase().includes(q.toLowerCase());
+          }
+        );
+        resolve(filteredConversations);
+      }
+    }, 1000); // Simulate network delay
+  });
 };

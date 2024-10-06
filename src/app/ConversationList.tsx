@@ -9,7 +9,9 @@ import {
   mockTranslations,
   mockConstants,
   mockConversations,
+  Conversation,
 } from "./Conversation/mockData";
+import WootButton from "./Conversation/ReplyBox/WootButton";
 
 const getInboxClassByType = (type: string): string => {
   // Mock implementation
@@ -200,12 +202,14 @@ const ChatTypeTabs: React.FC<ChatTypeTabsProps> = ({
 interface ConversationListProps {
   activeLabel: string;
   teamId: number;
+  children?: React.ReactNode;
 }
 
 // ConversationList component
 export const ConversationList: React.FC<ConversationListProps> = ({
   activeLabel,
   teamId,
+  children,
 }) => {
   const [conversations, setConversations] =
     React.useState<Conversation[]>(mockConversations);
@@ -233,6 +237,7 @@ export const ConversationList: React.FC<ConversationListProps> = ({
 
   return (
     <div className="conversations-list-wrap">
+      {children}
       <div className="chat-list__top">
         <h1 className="page-title text-truncate">Conversas</h1>
         <ChatFilter
@@ -264,9 +269,9 @@ export const ConversationList: React.FC<ConversationListProps> = ({
       )}
 
       {!hasCurrentPageEndReached && !loading && (
-        <button className="button clear expanded" onClick={() => {}}>
+        <WootButton classNames="button clear expanded" onClick={() => {}}>
           {mockTranslations["CHAT_LIST.LOAD_MORE_CONVERSATIONS"]}
-        </button>
+        </WootButton>
       )}
 
       {conversations.length > 0 && hasCurrentPageEndReached && !loading && (

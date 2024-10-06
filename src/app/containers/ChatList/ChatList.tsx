@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import constants from "@/dashboard/constants";
 import "./ChatList.modules.scss";
 import ChatTypeTabs from "../ChatTypeTabs/ChatTypeTabs";
-import ConversationCard from "../ConversationCard/ConversationCard";
 import ChatFilter from "../ChatFilter/ChatFilter";
+import ConversationCard from "@/app/Conversation/ContactPanel/ContactConversations/ConversationCard";
 
 interface ChatListProps {
   conversationInbox?: number;

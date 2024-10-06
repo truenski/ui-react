@@ -1,0 +1,58 @@
+.sidebarLabelsWrap {
+    margin-bottom: var(--space-normal);
+  }
+  
+  .contactConversationList {
+    width: 100%;
+  
+    .labelWrap {
+      margin-left: var(--space-medium);
+      position: relative;
+      line-height: var(--space-medium);
+  
+      .dropdownWrap {
+        display: flex;
+        position: absolute;
+        margin-right: var(--space-medium);
+        top: var(--space-medium);
+        width: 100%;
+        left: -1px;
+  
+        .dropdownPane {
+          width: 100%;
+          box-sizing: border-box;
+        }
+  
+        .dropdownPaneOpen {
+          display: block;
+        }
+      }
+    }
+  }
+  
+  .label {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-small);
+  
+    .labelTitle {
+      padding: var(--space-smaller) var(--space-small);
+      border-radius: var(--border-radius-small);
+      margin-right: var(--space-small);
+      color: #fff;
+    }
+  
+    .labelClose {
+      background: none;
+      border: none;
+      color: var(--color-danger);
+      cursor: pointer;
+      font-size: var(--font-size-small);
+    }
+  }
+  
+  .error {
+    color: var(--r-500);
+    font-size: var(--font-size-mini);
+    font-weight: var(--font-weight-medium);
+  }

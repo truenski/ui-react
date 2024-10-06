@@ -1,0 +1,51 @@
+.contactPanel {
+    background: white;
+    border-left: 1px solid var(--color-border);
+    font-size: var(--font-size-small);
+    overflow-y: auto;
+    overflow: auto;
+    position: relative;
+  
+    i {
+      margin-right: var(--space-smaller);
+    }
+  }
+  
+  .closeButton {
+    position: absolute;
+    right: var(--space-normal);
+    top: var(--space-slab);
+    font-size: var(--font-size-default);
+    color: var(--color-heading);
+  }
+  
+  .conversationActions {
+    margin-bottom: var(--space-normal);
+  }
+  
+  .multiselectWrapSmall {
+    .multiselect {
+      padding-left: var(--space-medium);
+      box-sizing: border-box;
+    }
+    .multiselect__element {
+      span {
+        width: 100%;
+      }
+    }
+  }
+  
+  .conversationDetails {
+    padding: var(--space-medium);
+  
+    .icon {
+      margin-right: var(--space-micro);
+      font-size: var(--font-size-micro);
+      color: #fff;
+    }
+  
+    .label {
+      color: #fff;
+      padding: 0.2rem;
+    }
+  }

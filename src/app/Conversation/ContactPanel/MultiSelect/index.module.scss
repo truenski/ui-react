@@ -1,0 +1,35 @@
+.multiselect {
+    position: relative;
+    width: 100%;
+  
+    .selectedItems {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+  
+    .selectedItem {
+      background: #e0e0e0;
+      border-radius: 4px;
+      margin: 0.2rem;
+      padding: 0.2rem 0.5rem;
+    }
+  
+    .placeholder {
+      color: #999;
+    }
+  
+    .select {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      background: white;
+      z-index: 1;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+  }

@@ -1,7 +1,7 @@
 import React from "react";
 import BubbleText from "./BubbleText";
 import BubbleActions from "./BubbleActions";
-import Spinner from "./Spinner";
+import Spinner from "./Spinner.tsx";
 import { mockSender } from "./mockData.ts";
 
 const Message = ({ data, isATweet }) => {

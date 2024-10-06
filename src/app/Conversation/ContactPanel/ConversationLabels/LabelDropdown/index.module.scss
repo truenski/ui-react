@@ -1,0 +1,102 @@
+//labeldropdownitem
+.itemWrap {
+    display: flex;
+  
+    .button {
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  
+    .buttonWrap {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  
+      &.active {
+        font-weight: var(--font-weight-bold);
+        color: var(--w-700);
+      }
+  
+      .nameLabelWrap {
+        display: flex;
+        min-width: 0;
+        width: 100%;
+  
+        .labelColorDisplay {
+          margin-right: var(--space-small);
+        }
+  
+        .labelText {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          line-height: 1.1;
+          padding-right: var(--space-small);
+        }
+  
+        .icon {
+          font-size: var(--font-size-small);
+        }
+      }
+    }
+  
+    .labelColorDisplay {
+      border-radius: var(--border-radius-normal);
+      height: var(--space-slab);
+      margin-right: var(--space-smaller);
+      margin-top: var(--space-micro);
+      min-width: var(--space-slab);
+      width: var(--space-slab);
+    }
+  }
+//labeldropdown
+
+  .dropdownSearchWrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 20rem;
+
+  .searchWrap {
+    margin-bottom: var(--space-small);
+    flex: 0 0 auto;
+    max-height: var(--space-large);
+
+    .searchInput {
+      margin: 0;
+      width: 100%;
+      border: 1px solid transparent;
+      height: var(--space-large);
+      font-size: var(--font-size-small);
+      padding: var(--space-small);
+      background-color: var(--color-background);
+    }
+
+    input:focus {
+      border: 1px solid var(--w-500);
+    }
+  }
+
+  .listWrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1 1 auto;
+    overflow: auto;
+
+    .list {
+      width: 100%;
+    }
+
+    .noResult {
+      display: flex;
+      justify-content: center;
+      color: var(--s-700);
+      padding: var(--space-smaller) var(--space-one);
+      font-weight: var(--font-weight-medium);
+      font-size: var(--font-size-small);
+    }
+  }
+}
